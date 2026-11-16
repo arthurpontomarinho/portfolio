@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd \"/Users/arthurmarinho/Desktop/Portfolio \" && exec python3 -m http.server 8420"],
+      "port": 8420
+    }
+  ]
+}

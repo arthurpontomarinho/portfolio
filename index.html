@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arthur Marinho — Game UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Arthur Marinho, Game UI/UX Designer from São Paulo: VR interfaces, mobile game UI, voxel art and illustration.">
+  <meta property="og:title" content="Arthur Marinho — Game UI/UX Designer">
+  <meta property="og:description" content="VR interfaces, mobile game UI, voxel art and illustration.">
+  <meta property="og:image" content="assets/img/the-boys-trigger-warning/00-captura-de-tela-2026-04-10-as-14-12-10.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><rect width='8' height='8' fill='%232b44c0'/><rect x='2' y='2' width='4' height='4' fill='%23ff5a7a'/></svg>">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span>Arthur Marinho</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Game UI/UX Designer · São Paulo</p>
+        <h1>Interfaces for players,<br><em>pixels &amp; voxels</em> for fun.</h1>
+        <p class="lede" id="hero-bio"></p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#work">See projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-mosaic" id="hero-mosaic" aria-hidden="true"></div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <div class="filters" id="filters" role="tablist" aria-label="Filter projects"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About</h2>
+      <div class="about-cols">
+        <div>
+          <p class="about-bio" id="about-bio"></p>
+          <dl class="facts" id="facts"></dl>
+        </div>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Let's make something players love.</h2>
+      <div class="contact-links" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Arthur Marinho</span>
+    <span class="pixel">made with figma brain &amp; voxels</span>
+  </footer>
+
+  <!-- Project detail -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="m-title">
+      <button class="icon-btn modal-close" data-close aria-label="Close">✕</button>
+      <header class="m-head">
+        <p class="eyebrow" id="m-client"></p>
+        <h2 id="m-title"></h2>
+        <p id="m-desc"></p>
+        <dl class="m-meta" id="m-meta"></dl>
+      </header>
+      <div class="gallery" id="m-gallery"></div>
+      <nav class="m-nav">
+        <a id="m-prev" href="#"></a>
+        <a id="m-next" href="#"></a>
+      </nav>
+    </article>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="icon-btn lb-close" aria-label="Close">✕</button>
+    <button class="icon-btn lb-prev" aria-label="Previous image">‹</button>
+    <img id="lb-img" alt="">
+    <button class="icon-btn lb-next" aria-label="Next image">›</button>
+    <span class="lb-count" id="lb-count"></span>
+  </div>
+
+  <script src="content/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

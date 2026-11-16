@@ -1,0 +1,9 @@
+# Originais em alta resolução (~580 MB) — ficam só no seu computador / backup
+acervo/
+
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
