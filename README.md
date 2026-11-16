@@ -1,59 +1,57 @@
 # Arthur Marinho — Portfolio
 
-Site estático (HTML/CSS/JS puro, sem frameworks) do meu portfolio de Game UI/UX, VR, voxel art e ilustração.
+Site estático (HTML/CSS/JS puro) recriado a partir do design original
+"Portfolio Arthur Marinho - Standalone.html" — mesmo layout, textos e estilo
+(Archivo, roxo `#6b30ec`, fundo pontilhado, cards com sombra dura).
+
+Publicado em: https://arthurpontomarinho.github.io/portfolio/
+
+## Páginas
+
+`#jogos` · `#apps` · `#arte` · `#sobre` · `#contato` · detalhe de projeto em `#p/<slug>` (ex.: `#p/boys`).
 
 ## Estrutura
 
 ```
 Portfolio/
-├── index.html              ← página do site
-├── css/style.css           ← visual (paleta do currículo: cobalto, coral, pêssego)
-├── js/main.js              ← grade, filtros, página do projeto, lightbox
+├── index.html              ← todas as páginas (Jogos, Apps, Arte, Sobre, Contato)
+├── css/style.css           ← design system + estilos do design original
+├── css/site.css            ← ajustes do site estático (imagens, zoom, mobile)
+├── js/app.js               ← navegação entre páginas, detalhe do projeto, zoom, formulário
 ├── content/
-│   ├── projects.json       ← ✏️ FONTE ÚNICA: perfil + projetos (edite aqui)
+│   ├── projects.json       ← ✏️ textos e imagens dos projetos (páginas de detalhe)
 │   └── data.js             ← gerado pelo build (não editar)
-├── assets/img/<projeto>/   ← imagens otimizadas (geradas, versionadas)
-├── scripts/build.py        ← gera assets/ e data.js a partir do acervo
+├── assets/
+│   ├── orig/               ← imagens que já estavam no design original
+│   ├── art/                ← imagens do acervo que completam as grades de Arte
+│   ├── img/<slug>/         ← galerias dos projetos (geradas do acervo)
+│   ├── fonts/              ← Archivo (woff2)
+│   └── sobre-foto.jpg
+├── curriculo-arthur-marinho.pdf
+├── scripts/build.py        ← gera assets/img e data.js a partir do acervo
 └── acervo/                 ← ORIGINAIS em alta (fora do git)
-    ├── Projetos/<Empresa>/<Projeto>/
-    ├── 3D/  (Voxel/, low poly)
-    ├── Ilustrações/  (Pixel Art/, vetor)
-    ├── Curriculo/
-    └── Organizar/          ← caixa de entrada para arquivos novos
 ```
 
-## Fluxo de trabalho
+## Editar projetos
 
-1. Coloque os arquivos originais numa pasta em `acervo/Projetos/<Empresa>/<Projeto>/`.
-2. Adicione (ou edite) o projeto em `content/projects.json`:
-   - `sources`: pastas do acervo de onde vêm as imagens
-   - `cover`: nome do arquivo que deve ser a capa
-   - `featured: true`: aparece no mosaico do topo
-   - `maxImages`: limite de imagens na galeria (padrão 14)
-   - `draft: true`: esconde o projeto
-3. Rode o build:
+1. Edite `content/projects.json` (textos `meta`, `lead`, `role`, `tags`; pastas `sources`;
+   `cover` = arquivo do acervo que abre a galeria; `process` = pastas para "Processo de design").
+2. Rode o build e abra localmente:
 
 ```bash
 python3 scripts/build.py
 ```
 
-4. Abra o site localmente:
-
 ```bash
 python3 -m http.server 8420
 ```
 
-e acesse http://localhost:8420
-
-## Publicar (GitHub Pages)
-
-Depois de criar o repositório no GitHub e dar push, em **Settings → Pages** escolha a branch `main` / pasta raiz.
-O site fica em `https://<usuario>.github.io/<repo>/`.
+3. Ao trocar CSS/JS, aumente o `?v=N` dos links no `index.html` (evita cache do navegador).
+4. `git add -A && git commit -m "..." && git push` — o GitHub Pages atualiza em ~1 min.
 
 ## Pendências
 
-- [ ] **Sensorial**: falta a pasta de imagens no acervo (está como `draft`).
-- [ ] Conferir anos/clientes em branco em `projects.json`.
-- [ ] `acervo/Projetos/Arvore/Hero - cópia` é cópia idêntica de `Hero` (pode apagar, 41 MB).
-- [ ] `acervo/Projetos/Freelas/Jogo Pierre` está vazia.
-- [ ] Vídeos `.mp4` de `acervo/3D/Voxel` ainda não estão no site.
+- [ ] `curriculo-arthur-marinho.pdf` é o currículo antigo (2021) — trocar pela versão atual.
+- [ ] Contato: ArtStation e Itch.io do original não tinham link; trocados por Behance e Tumblr.
+- [ ] Mad Brains: o card diz "puzzle autoral", mas o acervo/Tumblr descrevem um jogo de arena com zumbis (Mazari).
+- [ ] Projetos do acervo fora do design: Bosch, GFT, Unipar, Move Fever, Sensorial, protótipos pessoais.

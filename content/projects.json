@@ -1,267 +1,281 @@
 {
-  "profile": {
-    "name": "Arthur Marinho",
-    "role": "Game UI/UX Designer",
-    "location": "São Paulo, Brazil",
-    "experience": "17+ years in the digital games industry",
-    "bio": "I'm a UI/UX Designer based in São Paulo with over 17 years of experience in the digital games industry. Passionate about crafting intuitive player experiences and vibrant visual assets, I bridge the gap between game design, interactive interfaces, and visual art.",
-    "education": "Bachelor's Degree in Game Design — Universidade Anhembi Morumbi (2008–2011)",
-    "languages": ["Portuguese (native)", "English (advanced)", "Spanish (advanced)"],
-    "tools": ["Figma", "Unity", "Miro", "MagicaVoxel", "Qubicle", "Blender", "Illustrator"],
-    "focus": ["Game UI/UX", "VR / Spatial UI", "Voxel Art", "Vector Illustration", "2D/3D Assets"],
-    "links": {
-      "email": "arthurmarinho88@icloud.com",
-      "linkedin": "https://www.linkedin.com/in/arthurmarinho88",
-      "behance": "https://www.behance.net/arthurmarinho88",
-      "tumblr": "https://arthurpontomarinho.tumblr.com/"
-    },
-    "experienceTimeline": [
-      { "company": "ARVORE", "period": "", "summary": "UI/UX and Game Design for VR titles (The Boys: Trigger Warning)." },
-      { "company": "Venturion VR", "period": "2021 – present", "summary": "Wireframes and screen flows for VR apps and games, interface illustration, UI implementation and optimization in Unity." },
-      { "company": "Dreams on Demand", "period": "2017 – 2020", "summary": "Mobile wireframes and flows, icon and interface illustration, UI implementation in Unity." },
-      { "company": "Countryside Games", "period": "2015 – 2020", "summary": "Own indie studio: independent mobile games, modeling, illustration and animation of scenes, UI and characters." }
-    ]
-  },
-
-  "categories": {
-    "uiux": "UI/UX",
-    "vr": "VR / XR",
-    "game": "Game Art",
-    "voxel": "Voxel & 3D",
-    "illustration": "Illustration",
-    "pixel": "Pixel Art"
-  },
-
+  "_help": "Fonte única dos projetos. 'card' = imagem do card (assets/...). 'sources' = pastas do acervo para a galeria. 'cover' = arquivo do acervo que vira a 1ª imagem da galeria. Depois de editar: python3 scripts/build.py",
+  "order": [
+    "boys",
+    "zoo",
+    "slink",
+    "fire",
+    "westy",
+    "mad",
+    "victory",
+    "tower",
+    "retro",
+    "carreta",
+    "afs",
+    "petro-vr",
+    "ar-portal",
+    "vex",
+    "estacio"
+  ],
   "projects": [
     {
-      "slug": "the-boys-trigger-warning", "cover": "captura-de-tela-2026-04-10-as-14-14-59",
-      "title": "The Boys: Trigger Warning",
-      "client": "ARVORE", "platform": "Meta Quest · PS VR", "year": "2026",
-      "role": "UI/UX Designer · Game Designer",
-      "categories": ["uiux", "vr"], "featured": true,
-      "summary": "Action-packed VR title set in the chaotic universe of The Boys.",
-      "description": "The Boys: Trigger Warning is an action-packed virtual reality title developed by ARVORE for Meta Quest and PS VR. I served as UI/UX Designer and Game Designer, crafting intuitive spatial interface systems, immersive diegetic VR HUDs, and smooth interaction flows tailored for high-intensity VR gameplay.",
-      "sources": ["Projetos/Arvore/Hero/The Boys"], "maxImages": 16
+      "slug": "boys",
+      "title": "The Boys Trigger Warning",
+      "card": "assets/orig/p-boys.webp",
+      "meta": "ARVORE · VR · Unity",
+      "lead": "UX e UI de uma experiência em realidade virtual: leitura rápida em movimento, conforto e interação com as duas mãos.",
+      "role": "Fui UI/UX Designer e Game Designer do jogo da ARVORE para Meta Quest e PS VR, no universo caótico de The Boys. Desenhei os sistemas de interface espacial, o HUD diegético e os fluxos de interação pensados para gameplay intenso em VR — além do style guide que orienta cores, fontes, texturas e animações da UI.",
+      "tags": [
+        "UX & UI",
+        "VR",
+        "Unity"
+      ],
+      "sources": [
+        "Projetos/Arvore/Hero/The Boys"
+      ],
+      "cover": "captura-de-tela-2026-04-10-as-14-14-59",
+      "process": [
+        "Projetos/Arvore/Hero"
+      ]
     },
     {
-      "slug": "arvore-ui-system", "cover": "notification",
-      "title": "VR UI System & Style Guide",
-      "client": "ARVORE", "platform": "VR", "year": "2026",
-      "role": "UI/UX Designer",
-      "categories": ["uiux", "vr"],
-      "summary": "Pause menus, HUB, mission panels, popups and a full visual style guide.",
-      "description": "Wireframes and final screens for a VR game's pause menu, HUB, collection, logs and mission panels, plus a style guide covering colors, fonts, textures, animations and visual progression.",
-      "sources": ["Projetos/Arvore/Hero", "Projetos/Arvore/Hero/Style Guide"], "maxImages": 16
-    },
-    {
-      "slug": "slink-snatch", "cover": "captura-de-tela-2024-11-28-as-11-55-32",
-      "title": "Slink & Snatch",
-      "client": "Venturion", "platform": "VR", "year": "",
-      "role": "UI/UX Designer",
-      "categories": ["uiux", "vr"], "featured": true,
-      "summary": "Immersive VR action game.",
-      "description": "Slink Snatch is an immersive VR action game developed by Venturion. I was responsible for the complete UI/UX design, crafting intuitive spatial interface elements and comfortable in-VR interaction flows optimized for virtual reality gameplay.",
-      "sources": ["Projetos/Venturion/Slink Snatch"]
-    },
-    {
-      "slug": "bosch-training", "cover": "dialogue",
-      "title": "Bosch Internal Training App",
-      "client": "Venturion · Bosch", "platform": "App", "year": "",
-      "role": "UI/UX Designer",
-      "categories": ["uiux"],
-      "summary": "Corporate learning app for onboarding and skill development.",
-      "description": "A specialized corporate learning application designed to streamline employee onboarding and skill development. I was responsible for the complete UI/UX design, structuring intuitive learning modules, clear progress tracking, and an accessible interface optimized for everyday internal use.",
-      "sources": ["Projetos/Venturion/Bosch"]
-    },
-    {
-      "slug": "estacio-medical-sim", "cover": "captura-de-tela-2024-07-10-as-10-01-44",
-      "title": "Estácio Medical Simulation",
-      "client": "Venturion · Estácio", "platform": "App", "year": "2024",
-      "role": "Lead UI/UX Designer",
-      "categories": ["uiux"],
-      "summary": "Clinical training app for medical students.",
-      "description": "An interactive clinical training application for medical students to practice real-world hospital scenarios and patient care. I led the UI/UX design, creating intuitive interface flows, clear decision-making systems, and realistic patient monitoring HUDs.",
-      "sources": ["Projetos/Venturion/Estacio"]
-    },
-    {
-      "slug": "case-ih-scale-model", "cover": "67944bba-b762-4b23-b604-af17e1b9c039-rw-",
-      "title": "CASE IH Interactive Scale Model",
-      "client": "Venturion · CASE IH", "platform": "VR · Web", "year": "",
-      "role": "Lead UI/UX Designer",
-      "categories": ["uiux", "vr"],
-      "summary": "Virtual showroom of agricultural machinery as interactive 3D scale models.",
-      "description": "An immersive virtual showroom showcasing complex agricultural machinery through interactive 3D scale models. I led the complete UI/UX design across VR and web, crafting intuitive spatial controls for VR and fluid navigation for the web.",
-      "sources": ["Projetos/Venturion/Case Afs Farm", "Projetos/Venturion/Case Afs Game"]
-    },
-    {
-      "slug": "case-ih-showroom", "cover": "51658e03-4e5e-45bc-9f12-40d3a370e818-rw-",
-      "title": "CASE IH VR & Web Showroom",
-      "client": "Venturion · CASE IH", "platform": "VR · Web", "year": "",
-      "role": "UI/UX Designer",
-      "categories": ["uiux", "vr"],
-      "summary": "Step inside a realistic showroom of CASE IH tractors.",
-      "description": "An immersive VR and web experience letting users step inside a highly detailed, realistic showroom featuring CASE IH tractors. I was responsible for the UI/UX design and interactive user flows, ensuring seamless spatial navigation in VR and smooth product exploration on the web.",
-      "sources": ["Projetos/Venturion/Case"]
-    },
-    {
-      "slug": "petrobras-xr", "cover": "image-17",
-      "title": "Petrobras AR & Ride 70 Anos",
-      "client": "Venturion · Petrobras", "platform": "AR · VR", "year": "",
-      "role": "UI/UX Designer",
-      "categories": ["uiux", "vr"],
-      "summary": "Augmented reality and VR ride experiences for Petrobras.",
-      "description": "Interface design for Petrobras augmented reality experience and the VR ride celebrating the company's 70th anniversary.",
-      "sources": ["Projetos/Venturion/Petrobras AR", "Projetos/Venturion/Petrobras Ride 70 anos"]
-    },
-    {
-      "slug": "gft", "cover": "664df1b8-b15b-4024-a999-23e6fc68f88c-rw-",
-      "title": "GFT Experience",
-      "client": "Venturion · GFT", "platform": "VR", "year": "",
-      "role": "UI/UX Designer",
-      "categories": ["uiux", "vr"],
-      "summary": "Immersive experience interface for GFT.",
-      "description": "UI/UX for an immersive experience created for GFT at Venturion.",
-      "sources": ["Projetos/Venturion/GFT", "Projetos/Venturion/Unipar"]
-    },
-    {
-      "slug": "fire-survivors", "cover": "captura-de-tela-2024-11-26-as-08-52-53",
-      "title": "Fire Survivors",
-      "client": "Dreams on Demand", "platform": "Mobile", "year": "",
-      "role": "UI/UX Designer",
-      "categories": ["uiux", "game"], "featured": true,
-      "summary": "Fast-paced mobile survival action against chaotic hordes.",
-      "description": "A fast-paced mobile survival action game where players fight through chaotic hordes of enemies. I was responsible for the complete UI/UX design, creating intuitive HUDs, smooth menu navigation, and clean layout systems optimized for intense mobile gameplay.",
-      "sources": ["Projetos/DoD/Fire Survivors"]
-    },
-    {
-      "slug": "idle-star-zoo", "cover": "9836e4d5-d1a2-4722-8938-7fd69a90d796-rw-",
+      "slug": "zoo",
       "title": "Idle Star Zoo",
-      "client": "Dreams on Demand", "platform": "Mobile", "year": "2021",
-      "role": "Voxel Artist · UI/UX Designer",
-      "categories": ["uiux", "voxel", "game"], "featured": true,
-      "summary": "Idle management game of interplanetary zoos and alien animals.",
-      "description": "A mobile idle management game featuring interplanetary zoos and alien animal collection. I created the voxel models and the overall visual aesthetic, and designed the complete UI/UX for clean navigation and smooth player progression.",
-      "sources": ["Projetos/DoD/Star Zoo"]
+      "card": "assets/orig/p-zoo.webp",
+      "meta": "Casual Mobile · Unity · 2022",
+      "lead": "Jogo mobile de zoológico espacial com criaturas exóticas. Projetei as interfaces e criei centenas de modelos 3D, equilibrando criatividade e usabilidade.",
+      "role": "Criei os modelos voxel, a estética geral do jogo e toda a UI/UX — da gestão do zoológico à coleção de animais alienígenas — com navegação limpa e uma progressão fluida para o jogador.",
+      "tags": [
+        "UX & UI",
+        "3D",
+        "Voxel Art"
+      ],
+      "sources": [
+        "Projetos/DoD/Star Zoo"
+      ],
+      "cover": "9836e4d5-d1a2-4722-8938-7fd69a90d796-rw-"
     },
     {
-      "slug": "westy-west", "cover": "e3c9b8e2-f7f6-4ce8-b65f-29ad622dcc52",
+      "slug": "slink",
+      "title": "Slink Snatch",
+      "card": "assets/orig/p-slink.webp",
+      "meta": "VR · Level Design",
+      "lead": "Jogo em VR: interação com as mãos e leitura de espaço. Cuidei de UX, UI e level design.",
+      "role": "Jogo de ação imersivo em VR desenvolvido na Venturion. Fui responsável por todo o UX/UI: elementos de interface espacial intuitivos e fluxos de interação confortáveis, otimizados para jogar em realidade virtual.",
+      "tags": [
+        "UX & UI",
+        "Level Design",
+        "VR"
+      ],
+      "sources": [
+        "Projetos/Venturion/Slink Snatch"
+      ]
+    },
+    {
+      "slug": "fire",
+      "title": "Fire Survivors",
+      "card": "assets/orig/p-fire.webp",
+      "meta": "Mobile · Hypercasual",
+      "lead": "Hypercasual: o jogador entende o jogo no primeiro toque. UX, UI e ilustração 2D.",
+      "role": "Survival action mobile de ritmo rápido contra hordas de inimigos. Fiz todo o UX/UI — HUD, navegação de menus e sistemas de layout limpos — pensado para uma jogatina intensa no celular.",
+      "tags": [
+        "UX & UI",
+        "2D",
+        "Ilustração"
+      ],
+      "sources": [
+        "Projetos/DoD/Fire Survivors"
+      ],
+      "cover": "captura-de-tela-2024-11-26-as-08-52-53"
+    },
+    {
+      "slug": "westy",
       "title": "Westy West",
-      "client": "Countryside Games", "platform": "Mobile", "year": "",
-      "role": "Art Direction · Pixel Art · UI/UX",
-      "categories": ["game", "pixel", "uiux"], "featured": true,
-      "summary": "Wild West mobile action game from my indie studio.",
-      "description": "A Wild West-themed mobile action game developed by my indie studio, where players navigate blocky, pixel-art western environments and showdowns. I was responsible for the entire visual identity: all pixel art, character designs, animations, and UI/UX.",
-      "sources": ["Projetos/Countryside Games/Westy West", "Projetos/Countryside Games/Retro Runners"]
+      "card": "assets/orig/p-westy.jpg",
+      "meta": "Autoral · Mobile · Unity · 2016",
+      "lead": "Jogo mobile de sobrevivência western em mundo aberto estilo voxel art, co-criado com Marcelo Barce. Best of 2017 no Google Play e mais de 3 milhões de downloads.",
+      "role": "Desenvolvido no meu estúdio indie, a Countryside Games. Fui responsável por toda a identidade visual: arte, design de personagens, animações e UI/UX, criando um mundo retrô charmoso e coeso.",
+      "tags": [
+        "UX & UI",
+        "Design",
+        "Voxel Art"
+      ],
+      "sources": [
+        "Projetos/Countryside Games/Westy West"
+      ],
+      "cover": "e3c9b8e2-f7f6-4ce8-b65f-29ad622dcc52"
     },
     {
-      "slug": "victory-heat-rally-mobile", "cover": "filters-quality-95-format-webp-3",
-      "title": "Victory Heat Rally Mobile",
-      "client": "Freelance", "platform": "Mobile", "year": "",
-      "role": "UI/UX Designer · Mobile Port",
-      "categories": ["uiux", "game"],
-      "summary": "Bringing a console/PC racer to mobile.",
-      "description": "Victory Heat Rally Mobile brings the high-speed console and PC racing experience to mobile. I handled the mobile porting of the interface: redesigned control schemes, touch input systems, and adaptive UI/UX for responsive gameplay on smaller screens.",
-      "sources": ["Projetos/Freelas/Victory Head Rally Mobile"]
+      "slug": "mad",
+      "title": "Mad Brains",
+      "card": "assets/orig/p-mad.webp",
+      "meta": "Autoral · Mobile · Indie",
+      "lead": "Projeto autoral de puzzle, do game design aos níveis. UX, UI, game design e level design.",
+      "role": "Mad Brains – Zombie Paradise: ação em arena contra hordas de zumbis e outros jogadores. Como Lead UI/UX Designer, desenhei a interface, os fluxos e os layouts de HUD para uma navegação fluida em partidas de alta intensidade.",
+      "tags": [
+        "UX & UI",
+        "Game Design",
+        "Level Design"
+      ],
+      "sources": [
+        "Projetos/Mazari/Mad Brains"
+      ],
+      "cover": "1534179998-zombie-paradise-mad-brains-3"
     },
     {
-      "slug": "mad-brains", "cover": "1534179998-zombie-paradise-mad-brains-3",
-      "title": "Mad Brains – Zombie Paradise",
-      "client": "Mazari", "platform": "Mobile", "year": "2018",
-      "role": "Lead UI/UX Designer",
-      "categories": ["uiux", "game"],
-      "summary": "Arena combat against zombie hordes and rival players.",
-      "description": "An action-packed mobile title where players battle hordes of zombies and rival players in fast-paced arena combat. As Lead UI/UX Designer, I crafted the interface, user flows, and HUD layouts for smooth navigation in high-intensity matches.",
-      "sources": ["Projetos/Mazari/Mad Brains"]
+      "slug": "victory",
+      "title": "Victory Head Rally",
+      "meta": "Mobile · Porting",
+      "lead": "UX & UI · 2D · Ilustração · Mobile · Porting",
+      "role": "Levei a experiência de corrida de console e PC para o celular: redesenhei os esquemas de controle, o input por toque e a UI adaptativa para uma jogabilidade responsiva em telas menores.",
+      "tags": [
+        "UX & UI",
+        "2D",
+        "Ilustração",
+        "Mobile",
+        "Porting"
+      ],
+      "sources": [
+        "Projetos/Freelas/Victory Head Rally Mobile"
+      ],
+      "cover": "filters-quality-95-format-webp-3"
     },
     {
-      "slug": "move-fever", "cover": "6aec157e-9468-4f94-917c-bd43cace4b2d-rw-",
-      "title": "Move Fever",
-      "client": "Mazari", "platform": "Mobile", "year": "",
-      "role": "Visual Identity · Voxel Art · UI/UX",
-      "categories": ["voxel", "uiux", "game"],
-      "summary": "Rhythm-based mobile title with dynamic voxel environments.",
-      "description": "A vibrant, rhythm-based mobile title featuring dynamic voxel environments and fast-paced gameplay. I was responsible for the visual identity, all voxel models and artwork, and a sleek, intuitive UI/UX.",
-      "sources": ["Projetos/Mazari/Move Fever"]
+      "slug": "tower",
+      "title": "Medieval Tower Defense",
+      "meta": "Mobile · Autoral",
+      "lead": "UX & UI · 3D · Voxel Art · Mobile · Autoral",
+      "role": "Tower defense estratégico para mobile em mundos voxel coloridos. Criei todos os assets 3D voxel e a UI/UX completa, com visão tática clara e controles intuitivos.",
+      "tags": [
+        "UX & UI",
+        "3D",
+        "Voxel Art",
+        "Mobile",
+        "Autoral"
+      ],
+      "sources": [
+        "Projetos/Pessoais/TD Voxel"
+      ],
+      "cover": "8"
     },
     {
-      "slug": "voxel-td", "cover": "8",
-      "title": "Voxel TD",
-      "client": "Personal", "platform": "Mobile", "year": "",
-      "role": "Voxel Art · UI/UX",
-      "categories": ["voxel", "game", "uiux"],
-      "summary": "Strategic tower defense in vibrant blocky worlds.",
-      "description": "A strategic mobile tower defense game set in vibrant, blocky worlds. I created all 3D voxel assets and designed the complete UI/UX for clear tactical views and intuitive controls.",
-      "sources": ["Projetos/Pessoais/TD Voxel"]
+      "slug": "retro",
+      "title": "Retro Runners",
+      "meta": "Mobile · Autoral",
+      "lead": "3D · Animação · Ilustração · Mobile · Autoral",
+      "role": "Runner autoral da Countryside Games: modelagem 3D, animação e ilustração.",
+      "tags": [
+        "3D",
+        "Animação",
+        "Ilustração",
+        "Mobile",
+        "Autoral"
+      ],
+      "sources": [
+        "Projetos/Countryside Games/Retro Runners"
+      ]
     },
     {
-      "slug": "carreta-legends", "cover": "2ec74cc007fbe4b70ff224ed296eb6d0-jpg",
-      "title": "Carreta Legends – Heróis do Furacão",
-      "client": "Personal", "platform": "Mobile", "year": "",
-      "role": "Art Direction · Character Art",
-      "categories": ["game", "illustration"],
-      "summary": "Rhythm & precision game honoring Brazilian street parade icons.",
-      "description": "A rhythm and precision mobile game paying tribute to iconic Brazilian street parade characters through timely jumps and acrobatics. I was responsible for the entire visual creation: character art, environment assets, and art direction.",
-      "sources": ["Projetos/Pessoais/Carreta Furação"]
+      "slug": "carreta",
+      "title": "Carreta Legends",
+      "meta": "Mobile · Autoral",
+      "lead": "UI · 2D · Pixel Art · Mobile · Autoral",
+      "role": "Carreta Legends – Heróis do Furacão: jogo mobile de ritmo e precisão que homenageia os personagens icônicos da Carreta Furacão com pulos e acrobacias. Fiz toda a criação visual: personagens, cenários e direção de arte.",
+      "tags": [
+        "UI",
+        "2D",
+        "Pixel Art",
+        "Mobile",
+        "Autoral"
+      ],
+      "sources": [
+        "Projetos/Pessoais/Carreta Furação"
+      ],
+      "cover": "2ec74cc007fbe4b70ff224ed296eb6d0-jpg"
     },
     {
-      "slug": "personal-games", "cover": "unknown-11",
-      "title": "Indie Prototypes",
-      "client": "Personal", "platform": "Mobile · PC", "year": "2019 – 2024",
-      "role": "Game Art · UI",
-      "categories": ["game", "voxel"],
-      "summary": "Desert Survivor, Undead Army, Cutie, Alien Scape, Street Fighters and more.",
-      "description": "A collection of personal game prototypes exploring different art styles and genres: Desert Survivor, Undead Army, Cutie The Game, Alien Scape, Voxel Alien Killer and Street Fighters.",
-      "sources": ["Projetos/Pessoais/Desert Survivor", "Projetos/Pessoais/Undead Army", "Projetos/Pessoais/Cutie The Game", "Projetos/Pessoais/Alien Scape", "Projetos/Pessoais/Voxel Alien Killer", "Projetos/Pessoais/Street Fighters"], "maxImages": 18
+      "slug": "afs",
+      "title": "Case AFS Visual Farm",
+      "meta": "App · VR · Unity",
+      "lead": "Visualização de fazenda para quem trabalha em campo: UX, UI e ilustração.",
+      "role": "Showroom virtual da CASE IH com modelos 3D interativos em escala de maquinário agrícola. Liderei o UX/UI em VR e web: controles espaciais intuitivos no VR, navegação fluida na web e painéis holográficos para simplificar a demonstração dos produtos.",
+      "tags": [
+        "UX & UI",
+        "Ilustração"
+      ],
+      "sources": [
+        "Projetos/Venturion/Case Afs Farm",
+        "Projetos/Venturion/Case Afs Game"
+      ],
+      "cover": "67944bba-b762-4b23-b604-af17e1b9c039-rw-"
     },
     {
-      "slug": "voxel-art", "cover": "1",
-      "title": "Voxel Experiments",
-      "client": "Personal", "platform": "", "year": "",
-      "role": "Voxel Artist",
-      "categories": ["voxel"], "featured": true,
-      "summary": "Voxel pilots, medieval blocky characters and voxel experiments.",
-      "description": "Voxel Pilots, Medieval Blocky Characters and other experiments made in MagicaVoxel and Qubicle.",
-      "sources": ["3D/Voxel"], "maxImages": 40
+      "slug": "petro-vr",
+      "title": "Petrobras VR Ride",
+      "meta": "VR · Ride · Unity",
+      "lead": "Uma narrativa em VR com tempo fechado: UX, animação e timeline sincronizada ao movimento.",
+      "role": "Ride em VR para os 70 anos da Petrobras. Cuidei do UX, das animações e da timeline sincronizada ao movimento do brinquedo, para contar a história no tempo exato da experiência.",
+      "tags": [
+        "UX & UI",
+        "Animação",
+        "Timeline"
+      ],
+      "sources": [
+        "Projetos/Venturion/Petrobras Ride 70 anos"
+      ]
     },
     {
-      "slug": "low-poly", "cover": "11",
-      "title": "Low Poly 3D",
-      "client": "Personal", "platform": "", "year": "",
-      "role": "3D Artist",
-      "categories": ["voxel"],
-      "summary": "Retro models, blocky environments and minimalist stylized assets.",
-      "description": "My low poly 3D exploration, featuring retro models, blocky environments, and minimalist stylized assets.",
-      "sources": ["3D"]
+      "slug": "ar-portal",
+      "title": "Petrobras AR Portal",
+      "meta": "AR · Unity",
+      "lead": "UX & UI · 2D · AR · Unity",
+      "role": "Experiência em realidade aumentada para a Petrobras: UX, UI e arte 2D da interface, implementada na Unity.",
+      "tags": [
+        "UX & UI",
+        "2D",
+        "AR",
+        "Unity"
+      ],
+      "sources": [
+        "Projetos/Venturion/Petrobras AR"
+      ],
+      "cover": "image-17"
     },
     {
-      "slug": "pixel-art", "cover": "captura-de-tela-2025-05-26-as-12-03-24",
-      "title": "Pixel Art",
-      "client": "Personal", "platform": "", "year": "",
-      "role": "Pixel Artist",
-      "categories": ["pixel"],
-      "summary": "Retro-inspired sprites, characters and environment studies.",
-      "description": "My pixel art exploration, featuring retro-inspired sprites, character designs, and digital environment studies.",
-      "sources": ["Ilustrações/Pixel Art"]
+      "slug": "vex",
+      "title": "Case Vex VR",
+      "meta": "VR · Web · App",
+      "lead": "UX & UI · Design · VR · Web · App",
+      "role": "Showroom imersivo em VR e web com tratores CASE IH em um ambiente realista. Fui responsável pelo UX/UI e pelos fluxos de interação: navegação espacial no VR e exploração dos produtos na web.",
+      "tags": [
+        "UX & UI",
+        "Design",
+        "VR",
+        "Web",
+        "App"
+      ],
+      "sources": [
+        "Projetos/Venturion/Case"
+      ],
+      "cover": "51658e03-4e5e-45bc-9f12-40d3a370e818-rw-"
     },
     {
-      "slug": "vector-illustration", "cover": "12",
-      "title": "Vector Illustration",
-      "client": "Personal", "platform": "", "year": "",
-      "role": "Illustrator",
-      "categories": ["illustration"],
-      "summary": "Custom vector illustrations, game screens and graphic experiments.",
-      "description": "Visual exploration featuring custom vector illustrations, graphic experiments, game interface art and daily creative sketches.",
-      "sources": ["Ilustrações"], "maxImages": 40
-    },
-    {
-      "slug": "sensorial",
-      "title": "Sensorial",
-      "client": "", "platform": "Mobile", "year": "",
-      "role": "UI/UX Designer",
-      "categories": ["uiux"], "draft": true,
-      "summary": "Cognitive training app for focus, memory and mental agility.",
-      "description": "A cognitive training app designed to improve focus, memory, and mental agility through interactive exercises. I contributed to the UI/UX design: clean layouts, smooth onboarding flows, and clear performance tracking dashboards.",
-      "sources": []
+      "slug": "estacio",
+      "title": "Estacio Medical",
+      "meta": "App · PC · Multiplayer",
+      "lead": "UX & UI · Ilustração · App · PC · Multiplayer",
+      "role": "Aplicativo de simulação clínica para estudantes de medicina praticarem cenários reais de hospital e cuidado com o paciente. Liderei o UX/UI: fluxos intuitivos, sistemas claros de tomada de decisão e HUDs realistas de monitoramento do paciente.",
+      "tags": [
+        "UX & UI",
+        "Ilustração",
+        "App",
+        "PC",
+        "Multiplayer"
+      ],
+      "sources": [
+        "Projetos/Venturion/Estacio"
+      ],
+      "cover": "captura-de-tela-2024-07-10-as-10-01-44"
     }
   ]
 }
