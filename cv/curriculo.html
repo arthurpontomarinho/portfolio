@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Arthur Marinho — Currículo</title>
+<style>
+@font-face { font-family: 'Archivo'; font-weight: 400 800; src: url("../assets/fonts/archivo-latin.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Archivo'; font-weight: 400 800; src: url("../assets/fonts/archivo-latin-ext.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+:root { --ink: #201e1d; --accent: #6b30ec; --muted: #5b5857; --line: #cfcccb; --side: #f3f2f2; }
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: 'Archivo', system-ui, sans-serif; color: var(--ink); font-size: 8.6pt; line-height: 1.4; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.page { width: 210mm; height: 297mm; overflow: hidden; display: grid; grid-template-columns: 64mm 1fr; }
+.side { background: var(--side); padding: 11mm 7mm 9mm 9mm; border-right: 2px solid var(--ink); }
+.main { padding: 11mm 11mm 9mm 9mm; }
+
+.photo { width: 72%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border: 2px solid var(--ink); box-shadow: 4px 4px 0 0 var(--ink); display: block; margin-bottom: 6.5mm; }
+
+h1 { font-weight: 800; font-size: 27pt; line-height: .92; letter-spacing: -0.015em; text-transform: uppercase; margin: 0; }
+.role { font-weight: 800; font-size: 12.5pt; text-transform: uppercase; margin: 2.5mm 0 0; letter-spacing: -0.005em; }
+.role span { color: var(--accent); }
+.quote { font-weight: 800; font-size: 11pt; margin: 3.5mm 0 0; }
+
+h2 { font-weight: 800; font-size: 8.5pt; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 2.6mm; }
+.main h2 { color: var(--accent); }
+section { margin-top: 5mm; }
+.side section:first-of-type { margin-top: 0; }
+
+p { margin: 0 0 1.6mm; }
+.lead { font-size: 9.4pt; line-height: 1.45; font-weight: 600; }
+.muted { color: var(--muted); }
+
+ul { list-style: none; margin: 0; padding: 0; }
+.side li { padding: .75mm 0; font-size: 8.1pt; border-top: 1.5px solid var(--line); }
+.side li:last-child { border-bottom: 1.5px solid var(--line); }
+.group + .group { margin-top: 2.4mm; }
+.group h3 { font-size: 9pt; font-weight: 800; margin: 0 0 1.2mm; }
+.group.main-skill h3 { display: inline-block; background: var(--accent); color: #fff; padding: .5mm 2mm; box-shadow: 2px 2px 0 0 var(--ink); }
+.contact li { word-break: break-word; font-size: 7.8pt; }
+.contact b { display: block; font-size: 7.2pt; letter-spacing: 0.08em; text-transform: uppercase; }
+a { color: inherit; text-decoration: none; }
+
+.job { display: grid; grid-template-columns: 1fr auto; gap: 0 4mm; padding: 1mm 0; border-top: 1.5px solid var(--line); break-inside: avoid; }
+.job:last-child { border-bottom: 1.5px solid var(--line); }
+.job .co { font-weight: 800; font-size: 9.2pt; }
+.job .date { font-size: 8.4pt; color: var(--muted); white-space: nowrap; font-feature-settings: 'tnum' 1; }
+.job .what { grid-column: 1 / -1; color: var(--muted); }
+
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 4.5mm; }
+.proj { padding: 1.1mm 0; border-top: 1.5px solid var(--line); break-inside: avoid; }
+.proj b { font-weight: 800; }
+.proj span { display: block; font-size: 7.8pt; color: var(--muted); }
+
+.cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 4.5mm; }
+.cols li { padding: .8mm 0; border-top: 1.5px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="page">
+  <aside class="side">
+    <img class="photo" src="../assets/sobre-foto.jpg" alt="Arthur Marinho">
+
+    <section class="contact">
+      <h2>Contato</h2>
+      <ul>
+        <li><b>Base</b>São Paulo, Brasil</li>
+        <li><b>E-mail</b><a href="mailto:arthurmarinho88@icloud.com">arthurmarinho88@icloud.com</a></li>
+        <li><b>Portfólio</b><a href="https://arthurpontomarinho.github.io/portfolio/">arthurpontomarinho.github.io/portfolio</a></li>
+        <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/arthurmarinho88">linkedin.com/in/arthurmarinho88</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Especialidades</h2>
+      <div class="group main-skill">
+        <h3>UX &amp; UI Design</h3>
+        <ul>
+          <li>UX &amp; UI para jogos mobile, console e VR</li>
+          <li>HUDs, menus e sistemas de navegação</li>
+          <li>Design de interação para VR e AR</li>
+          <li>Wireframes, fluxos e protótipos navegáveis</li>
+          <li>Design systems e bibliotecas de componentes</li>
+          <li>Playtests e pesquisa com usuários</li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Implementação</h3>
+        <ul><li>Implementação e otimização de interfaces na Unity</li></ul>
+      </div>
+      <div class="group">
+        <h3>Arte e Direção Visual</h3>
+        <ul><li>Modelagem 3D em voxel art e low poly</li><li>Ilustração e animação 2D</li></ul>
+      </div>
+      <div class="group">
+        <h3>Game Design</h3>
+        <ul><li>Game Design e Level Design</li></ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Formação</h2>
+      <p><b>Design de Jogos</b><br><span class="muted">Universidade Anhembi Morumbi · 2008 — 2011</span></p>
+    </section>
+
+    <section>
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Português · Nativo</li>
+        <li>Inglês · Avançado</li>
+        <li>Espanhol · Avançado</li>
+      </ul>
+    </section>
+  </aside>
+
+  <main class="main">
+    <header>
+      <h1>Arthur Marinho</h1>
+      <p class="role"><span>UX</span> &amp; <span>UI</span> Designer</p>
+      <p class="quote">“Interface é parte da jogabilidade.”</p>
+    </header>
+
+    <section>
+      <h2>Sobre</h2>
+      <p class="lead">Sou Arthur Marinho, UX &amp; UI Designer especializado em jogos e experiências interativas, com quase 20 anos de experiência na indústria de games.</p>
+      <p>Meu trabalho é pensar em como o jogador interage com o jogo: como entende suas mecânicas, encontra informações, toma decisões e navega pela experiência. Desenvolvo HUDs, menus, sistemas de interação, onboarding e design systems para jogos mobile e experiências imersivas em VR e AR.</p>
+    </section>
+
+    <section>
+      <h2>Experiência profissional</h2>
+      <div class="job"><span class="co">ARVORE Immersive Experiences</span><span class="date">2024 — atual</span><span class="what">Senior UI/UX Designer · The Boys: Trigger Warning (VR)</span></div>
+      <div class="job"><span class="co">Venturion VR</span><span class="date">2021 — 2024</span><span class="what">UI/UX Designer · experiências imersivas e apps B2B</span></div>
+      <div class="job"><span class="co">RD3 Digital</span><span class="date">2019 — 2020</span><span class="what">Senior UI/UX Designer · apps mobile e AR/VR para grandes marcas</span></div>
+      <div class="job"><span class="co">Mazari Games</span><span class="date">2017 — 2021</span><span class="what">UI/UX Designer · jogos mobile para Android e iOS</span></div>
+      <div class="job"><span class="co">Dreams on Demand</span><span class="date">2016 — 2021</span><span class="what">Freelance UI/UX Designer e ilustrador · projetos mobile independentes</span></div>
+      <div class="job"><span class="co">Countryside Games</span><span class="date">2015 — 2018</span><span class="what">CEO e Lead UI/UX Designer · Westy West, finalista do Best Games of 2017 no Google Play</span></div>
+      <div class="job"><span class="co">Eurocase Argentina</span><span class="date">2015 — 2016</span><span class="what">UI/UX Designer e ilustrador · jogos educativos para tablets</span></div>
+      <div class="job"><span class="co">Glu Mobile</span><span class="date">2010 — 2011</span><span class="what">QA e tester · Contract Killer, Frontline Commando, Blood &amp; Glory, Deer Hunter</span></div>
+      <div class="job"><span class="co">Tortuga Studios</span><span class="date">2008 — 2010</span><span class="what">Animador 2D e designer · TV Rá-Tim-Bum e advergames para o Cartoon Network</span></div>
+    </section>
+
+    <section>
+      <h2>Projetos em destaque</h2>
+      <div class="projects">
+        <div class="proj"><b>The Boys: Trigger Warning</b><span>ARVORE · Meta Quest e PS VR</span></div>
+        <div class="proj"><b>Idle Star Zoo</b><span>Casual Mobile · Unity · 2022</span></div>
+        <div class="proj"><b>Slink Snatch</b><span>Venturion · VR</span></div>
+        <div class="proj"><b>Fire Survivors</b><span>Mobile · Hypercasual</span></div>
+        <div class="proj"><b>Westy West</b><span>Countryside Games · Mobile · 2016</span></div>
+        <div class="proj"><b>Mad Brains – Zombie Paradise</b><span>Mazari Games · Mobile</span></div>
+        <div class="proj"><b>CASE IH · AFS e Vex VR</b><span>Venturion · VR e Web</span></div>
+        <div class="proj"><b>Estácio Medical</b><span>Venturion · App · PC · Multiplayer</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Como trabalho</h2>
+      <ul class="cols">
+        <li>Comunicação com equipes multidisciplinares</li>
+        <li>Liderança e gestão de equipes de design</li>
+        <li>Mentoria de designers em início de carreira</li>
+        <li>Defesa de decisões de design com base em dados</li>
+        <li>Escuta ativa durante playtests e sessões de feedback</li>
+        <li>Organização e documentação para handoff</li>
+      </ul>
+    </section>
+  </main>
+</div>
+</body>
+</html>

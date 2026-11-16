@@ -27,7 +27,8 @@ Portfolio/
 │   ├── img/<slug>/         ← galerias dos projetos (geradas do acervo)
 │   ├── fonts/              ← Archivo (woff2)
 │   └── sobre-foto.jpg
-├── curriculo-arthur-marinho.pdf
+├── curriculo-arthur-marinho.pdf ← gerado de cv/curriculo.html (sh scripts/build_cv.sh)
+├── cv/curriculo.html       ← ✏️ fonte do currículo (A4, 1 página)
 ├── scripts/build.py        ← gera assets/img e data.js a partir do acervo
 └── acervo/                 ← ORIGINAIS em alta (fora do git)
 ```
@@ -51,7 +52,6 @@ python3 -m http.server 8420
 
 ## Pendências
 
-- [ ] `curriculo-arthur-marinho.pdf` é o currículo antigo (2021) — trocar pela versão atual.
 - [ ] Contato: ArtStation e Itch.io do original não tinham link; trocados por Behance e Tumblr.
 - [ ] Mad Brains: o card diz "puzzle autoral", mas o acervo/Tumblr descrevem um jogo de arena com zumbis (Mazari).
 - [ ] Projetos do acervo fora do design: Bosch, GFT, Unipar, Move Fever, Sensorial, protótipos pessoais.
