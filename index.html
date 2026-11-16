@@ -9,8 +9,8 @@
 <meta property="og:description" content="UX &amp; UI para jogos mobile, VR e AR. Voxel, low poly, pixel art e ilustração.">
 <meta property="og:image" content="assets/orig/p-boys.webp">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' fill='%23ffffff'/><text x='60' y='78' font-family='Georgia,serif' font-weight='700' font-size='54' fill='%236b30ec' text-anchor='middle'>AM</text></svg>">
-<link rel="stylesheet" href="css/style.css?v=9">
-<link rel="stylesheet" href="css/site.css?v=9">
+<link rel="stylesheet" href="css/style.css?v=12">
+<link rel="stylesheet" href="css/site.css?v=12">
 </head>
 <body>
 <div data-lang-root="" style="min-height:100vh">
@@ -262,162 +262,137 @@
   <div data-view="sobre" hidden>
   <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
     <h1 style="font-family:var(--font-heading);font-weight:800;font-size:clamp(40px,6vw,76px);line-height:0.95;letter-spacing:-0.015em;margin:56px 0 0;max-width:none">SOBRE MIM</h1>
-    <section data-section="sobre" data-g="split" style="display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px clamp(24px,5vw,96px);padding:56px 0 84px">
-      <div>
-        <figure style="margin:0 0 28px">
-          <div class="slot" id="sobre-foto" style="width:100%;aspect-ratio:1/1"><img src="assets/sobre-foto.jpg" alt="Foto do Arthur" loading="lazy"></div>
+
+    <!-- A. Apresentação -->
+    <section data-section="sobre" data-g="split" class="about-intro">
+      <aside class="about-side">
+        <figure style="margin:0">
+          <div class="slot" id="sobre-foto" style="width:100%;aspect-ratio:1/1"><img src="assets/sobre-foto.jpg" alt="Foto de Arthur Marinho" loading="lazy"></div>
         </figure>
-        <p style="font-size: 18px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text); margin: 0 0 20px; font-weight: 700; text-align: left; text-decoration-line: none">Sobre</p>
-        <h2 style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:32px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 28px">
-          Interface é parte da jogabilidade.
-        </h2>
-        <p style="font-size:15.5px;line-height:28px;color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:0 0 28px;max-width:48ch">
-          Crio interfaces e experiências para jogos mobile e experiências imersivas em VR e AR. Trabalho com HUDs, menus, onboarding e sistemas de economia in-game, além de desenvolver a parte visual dos projetos com voxel art, low poly, pixel art e ilustração. Também implemento interfaces diretamente na Unity.
-        </p>
-        <p style="font-size:15.5px;line-height:28px;color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:0 0 28px;max-width:48ch">
-          Antes de tomar qualquer decisão de design, observo pessoas jogando. É quando alguém tropeça em um menu que surgem algumas das melhores oportunidades de melhorar uma experiência.
-        </p>
-        <p style="font-size:15.5px;line-height:28px;color:color-mix(in srgb,var(--color-text) 78%,transparent);margin:0 0 28px;max-width:48ch">
-          Sou Arthur, tenho 38 anos e sou de São Paulo. Estudei Design de Jogos na Anhembi Morumbi e trabalho na indústria de games há quase 20 anos. Hoje, sou especializado em UX &amp; UI Design.
-        </p>
-        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap">
-          <a class="hard-btn" href="curriculo-arthur-marinho.pdf" download="" style="background: #fff; color: var(--color-text); padding: 8px 14px; display: inline-block; border: 2px solid var(--color-text); box-shadow: 5px 5px 0 0 var(--color-text); transition: transform 0.15s ease; font-family: var(--font-heading); font-weight: 700; font-size: 20px">Baixar currículo (PDF)</a>
+        <dl class="about-facts">
+          <div><dt>Experiência</dt><dd>Quase 20 anos na indústria de games</dd></div>
+          <div><dt>Base</dt><dd>São Paulo, Brasil</dd></div>
+          <div><dt>Formação</dt><dd>Design de Jogos · Universidade Anhembi Morumbi</dd></div>
+          <div><dt>Idiomas</dt><dd>Português · Nativo<br>Inglês · Avançado<br>Espanhol · Avançado</dd></div>
+        </dl>
+        <a class="hard-btn" href="curriculo-arthur-marinho.pdf" download="" style="background: #fff; color: var(--color-text); padding: 8px 14px; display: inline-block; border: 2px solid var(--color-text); box-shadow: 5px 5px 0 0 var(--color-text); transition: transform 0.15s ease; font-family: var(--font-heading); font-weight: 700; font-size: 20px">Baixar currículo (PDF)</a>
+      </aside>
+      <div class="about-main">
+        <p class="about-kicker">Arthur Marinho · UX &amp; UI Designer para jogos</p>
+        <h2 class="about-quote">“Interface é parte da jogabilidade.”</h2>
+        <div class="about-text">
+          <p class="about-lead">Sou Arthur Marinho, UX &amp; UI Designer especializado em jogos e experiências interativas, com quase 20 anos de experiência na indústria de games.</p>
+          <p>Meu trabalho é pensar em como o jogador interage com o jogo: como entende suas mecânicas, encontra informações, toma decisões e navega pela experiência. Desenvolvo HUDs, menus, sistemas de interação, onboarding e design systems para jogos mobile e experiências imersivas em VR e AR.</p>
+          <p>Acredito que uma boa interface não é apenas bonita ou funcional. Ela precisa entender o ritmo do jogo, respeitar a atenção do jogador e fazer parte da experiência, sem atrapalhar aquilo que realmente importa: jogar.</p>
+          <p>Gosto de acompanhar o processo de perto, do primeiro wireframe à implementação. Trabalho diretamente na Unity e também tenho experiência com direção visual, ilustração, pixel art, voxel art e modelagem low poly.</p>
+          <p>Antes de desenhar qualquer interface, gosto de ver alguém jogando. Afinal, é muito mais fácil descobrir o que precisa ser melhorado quando você observa onde o jogador realmente encontra dificuldades.</p>
         </div>
-      </div>
-      <div>
-        <p style="font-size: 18px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text); margin: 0 0 20px; font-weight: 700; text-align: left; text-decoration-line: none">Experiência profissional</p>
-        <div style="display: grid">
-          <div data-job="" style="display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 6px 24px; align-items: baseline; padding: 18px 0">
-            <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 19px; letter-spacing: -0.01em">ARVORE Immersive Experiences</span>
-            <span style="font-size: 14px; font-feature-settings: 'tnum' 1; color: color-mix(in srgb,var(--color-text) 60%,transparent)">2024 — atual</span>
-            <span style="font-size:15px;line-height:24px;color:color-mix(in srgb,var(--color-text) 78%,transparent)">Senior UI/UX Designer · The Boys: Trigger Warning (VR)</span>
-          </div>
-          <div data-job="" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:18px 0;border-top:2px solid var(--color-divider)">
-            <span style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;letter-spacing:-0.01em">Venturion VR</span>
-            <span style="font-size:14px;font-feature-settings:'tnum' 1;color:color-mix(in srgb,var(--color-text) 60%,transparent)">2021 — 2024</span>
-            <span style="font-size:15px;line-height:24px;color:color-mix(in srgb,var(--color-text) 78%,transparent)">UI/UX Designer · experiências imersivas e apps B2B</span>
-          </div>
-          <div data-job="" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:18px 0;border-top:2px solid var(--color-divider)">
-            <span style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;letter-spacing:-0.01em">RD3 Digital</span>
-            <span style="font-size:14px;font-feature-settings:'tnum' 1;color:color-mix(in srgb,var(--color-text) 60%,transparent)">2019 — 2020</span>
-            <span style="font-size:15px;line-height:24px;color:color-mix(in srgb,var(--color-text) 78%,transparent)">Senior UI/UX Designer · apps mobile e AR/VR para grandes marcas</span>
-          </div>
-          <div data-job="" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:18px 0;border-top:2px solid var(--color-divider)">
-            <span style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;letter-spacing:-0.01em">Mazari Games</span>
-            <span style="font-size:14px;font-feature-settings:'tnum' 1;color:color-mix(in srgb,var(--color-text) 60%,transparent)">2017 — 2021</span>
-            <span style="font-size:15px;line-height:24px;color:color-mix(in srgb,var(--color-text) 78%,transparent)">UI/UX Designer · jogos mobile para Android e iOS</span>
-          </div>
-          <div data-job="" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:18px 0;border-top:2px solid var(--color-divider)">
-            <span style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;letter-spacing:-0.01em">Dreams on Demand</span>
-            <span style="font-size:14px;font-feature-settings:'tnum' 1;color:color-mix(in srgb,var(--color-text) 60%,transparent)">2016 — 2021</span>
-            <span style="font-size:15px;line-height:24px;color:color-mix(in srgb,var(--color-text) 78%,transparent)">Freelance UI/UX Designer e ilustrador · projetos mobile independentes</span>
-          </div>
-          <div data-job="" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:18px 0;border-top:2px solid var(--color-divider)">
-            <span style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;letter-spacing:-0.01em">Countryside Games</span>
-            <span style="font-size:14px;font-feature-settings:'tnum' 1;color:color-mix(in srgb,var(--color-text) 60%,transparent)">2015 — 2018</span>
-            <span style="font-size:15px;line-height:24px;color:color-mix(in srgb,var(--color-text) 78%,transparent)">CEO e Lead UI/UX Designer · Westy West, finalista do Best Games of 2017 no Google Play</span>
-          </div>
-          <div data-job="" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:18px 0;border-top:2px solid var(--color-divider)">
-            <span style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;letter-spacing:-0.01em">Eurocase Argentina</span>
-            <span style="font-size:14px;font-feature-settings:'tnum' 1;color:color-mix(in srgb,var(--color-text) 60%,transparent)">2015 — 2016</span>
-            <span style="font-size:15px;line-height:24px;color:color-mix(in srgb,var(--color-text) 78%,transparent)">UI/UX Designer e ilustrador · jogos educativos para tablets</span>
-          </div>
-          <div data-job="" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:18px 0;border-top:2px solid var(--color-divider)">
-            <span style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;letter-spacing:-0.01em">Glu Mobile</span>
-            <span style="font-size:14px;font-feature-settings:'tnum' 1;color:color-mix(in srgb,var(--color-text) 60%,transparent)">2010 — 2011</span>
-            <span style="font-size:15px;line-height:24px;color:color-mix(in srgb,var(--color-text) 78%,transparent)">QA e tester · Contract Killer, Frontline Commando, Blood &amp; Glory, Deer Hunter</span>
-          </div>
-          <div data-job="" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;padding:18px 0;border-top:2px solid var(--color-divider)">
-            <span style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;letter-spacing:-0.01em">Tortuga Studios</span>
-            <span style="font-size:14px;font-feature-settings:'tnum' 1;color:color-mix(in srgb,var(--color-text) 60%,transparent)">2008 — 2010</span>
-            <span style="font-size:15px;line-height:24px;color:color-mix(in srgb,var(--color-text) 78%,transparent)">Animador 2D e designer · TV Rá-Tim-Bum e advergames para o Cartoon Network</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr style="height:2px;border:0;margin:0;background:var(--color-divider)"><hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
-
-    <section style="max-width: 1200px; padding: 32px 0 0; padding-top: 54px">
-      <p style="font-size: 18px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text); margin: 0 0 20px; font-weight: 700; text-align: left; text-decoration-line: none">Línguas</p>
-      <div style="display:flex;gap:16px;flex-wrap:wrap">
-        <span class="tag tag-outline" style="display: flex; gap: 10px; align-items: baseline; font-size: 16px; padding: 12px 20px; color: var(--color-text); border-color: var(--color-text); width: 343px">Português<span style="opacity:0.6">· Nativo</span></span>
-        <span class="tag tag-outline" style="display: flex; gap: 10px; align-items: baseline; font-size: 16px; padding: 12px 20px; color: var(--color-text); border-color: var(--color-text); width: 343px">Inglês<span style="opacity:0.6">· Avançado</span></span>
-        <span class="tag tag-outline" style="display: flex; gap: 10px; align-items: baseline; font-size: 16px; padding: 12px 20px; color: var(--color-text); border-color: var(--color-text); width: 343px">Espanhol<span style="opacity:0.6">· Avançado</span></span>
-      </div>
-    </section>
-
-    <section data-g="split" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:42px clamp(24px,5vw,96px);padding:56px 0">
-      <div>
-        <p style="font-size: 18px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text); margin: 0 0 28px; font-weight: 700; text-align: left; text-decoration-line: none">Hard skills</p>
-        <ul style="list-style:none;margin:0;padding:0;display:grid">
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">UX &amp; UI Design para jogos mobile, console e VR</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Implementação e otimização de interfaces na Unity</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Design de interação para VR e AR</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Wireframes, fluxos e protótipos navegáveis</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Design systems e bibliotecas de componentes</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Modelagem 3D em voxel art e low poly</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Ilustração e animação 2D</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider)">Playtests, pesquisa com usuários e level design</li>
-        </ul>
-      </div>
-      <div>
-        <p style="font-size: 18px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text); margin: 0 0 28px; font-weight: 700; text-align: left; text-decoration-line: none">Soft skills</p>
-        <ul style="list-style:none;margin:0;padding:0;display:grid">
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Comunicação e colaboração com equipes multidisciplinares</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Liderança e gestão de equipes de design</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Mentoria de designers em início de carreira</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Defesa de decisões de design com base em dados</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Adaptação a prazo curto e mudança de escopo</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Escuta ativa durante playtests e sessões de feedback</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider)">Organização e documentação para handoff</li>
-          <li style="font-size:15.5px;line-height:24px;padding:14px 0;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider)">Comunicação em português, inglês e espanhol</li>
-        </ul>
       </div>
     </section>
 
     <hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
 
-    <section style="padding:56px 0 84px">
-      <p style="font-size:13px;line-height:14px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text);margin:0 0 28px;font-weight:700">Softwares</p>
-      <div data-g="sw" style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(16px,2.5vw,32px)">
-        <figure style="margin:0">
-          <div class="slot" id="sw-figma" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-figma.webp" alt="Figma" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-unity" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-unity.webp" alt="Unity" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-photoshop" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-photoshop.webp" alt="Photoshop" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-illustrator" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-illustrator.webp" alt="Illustrator" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-after-effects" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-after-effects.webp" alt="After Effects" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-blender" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-blender.webp" alt="Blender" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-qubicle" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-qubicle.webp" alt="Qubicle" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-aseprite" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-aseprite.webp" alt="Aseprite" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-unreal" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-unreal.webp" alt="Unreal" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-miro" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-miro.webp" alt="Miro" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-jira" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-jira.webp" alt="Jira" loading="lazy"></div>
-        </figure>
-        <figure style="margin:0">
-          <div class="slot" id="sw-notion" style="width:100%;aspect-ratio:1/1;background:#fff"><img src="assets/orig/sw-notion.webp" alt="Notion" loading="lazy"></div>
-        </figure>
+    <!-- B. Especialidades -->
+    <section data-g="split" class="about-block">
+      <div>
+        <h2 class="about-h">Especialidades</h2>
+        <p class="about-note">UX &amp; UI é o centro do meu trabalho. As demais áreas complementam essa especialização.</p>
       </div>
+      <div class="skills">
+        <div class="skill-group skill-main">
+          <h3>UX &amp; UI Design</h3>
+          <ul class="about-list">
+            <li>UX &amp; UI para jogos mobile, console e VR</li>
+            <li>HUDs, menus e sistemas de navegação</li>
+            <li>Design de interação para VR e AR</li>
+            <li>Wireframes, fluxos e protótipos navegáveis</li>
+            <li>Design systems e bibliotecas de componentes</li>
+            <li>Playtests e pesquisa com usuários</li>
+          </ul>
+        </div>
+        <div class="skill-side">
+          <div class="skill-group">
+            <h3>Implementação</h3>
+            <ul class="about-list">
+              <li>Implementação e otimização de interfaces na Unity</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Arte e Direção Visual</h3>
+            <ul class="about-list">
+              <li>Modelagem 3D em voxel art e low poly</li>
+              <li>Ilustração e animação 2D</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Game Design</h3>
+            <ul class="about-list">
+              <li>Game Design e Level Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
+
+    <!-- C. Ferramentas -->
+    <section data-g="split" class="about-block">
+      <div>
+        <h2 class="about-h">Ferramentas</h2>
+      </div>
+      <div data-g="sw" class="tools">
+        <figure><div class="slot" id="sw-figma"><img src="assets/orig/sw-figma.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-unity"><img src="assets/orig/sw-unity.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-photoshop"><img src="assets/orig/sw-photoshop.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-illustrator"><img src="assets/orig/sw-illustrator.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-after-effects"><img src="assets/orig/sw-after-effects.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-blender"><img src="assets/orig/sw-blender.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-qubicle"><img src="assets/orig/sw-qubicle.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-aseprite"><img src="assets/orig/sw-aseprite.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-unreal"><img src="assets/orig/sw-unreal.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-miro"><img src="assets/orig/sw-miro.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-jira"><img src="assets/orig/sw-jira.webp" alt="" loading="lazy"></div></figure>
+        <figure><div class="slot" id="sw-notion"><img src="assets/orig/sw-notion.webp" alt="" loading="lazy"></div></figure>
+      </div>
+    </section>
+
+    <hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
+
+    <!-- D. Experiência profissional -->
+    <section data-g="split" class="about-block">
+      <div>
+        <h2 class="about-h">Experiência profissional</h2>
+      </div>
+      <div class="jobs">
+        <div class="job"><span class="job-co">ARVORE Immersive Experiences</span><span class="job-date">2024 — atual</span><span class="job-role">Senior UI/UX Designer · The Boys: Trigger Warning (VR)</span></div>
+        <div class="job"><span class="job-co">Venturion VR</span><span class="job-date">2021 — 2024</span><span class="job-role">UI/UX Designer · experiências imersivas e apps B2B</span></div>
+        <div class="job"><span class="job-co">RD3 Digital</span><span class="job-date">2019 — 2020</span><span class="job-role">Senior UI/UX Designer · apps mobile e AR/VR para grandes marcas</span></div>
+        <div class="job"><span class="job-co">Mazari Games</span><span class="job-date">2017 — 2021</span><span class="job-role">UI/UX Designer · jogos mobile para Android e iOS</span></div>
+        <div class="job"><span class="job-co">Dreams on Demand</span><span class="job-date">2016 — 2021</span><span class="job-role">Freelance UI/UX Designer e ilustrador · projetos mobile independentes</span></div>
+        <div class="job"><span class="job-co">Countryside Games</span><span class="job-date">2015 — 2018</span><span class="job-role">CEO e Lead UI/UX Designer · Westy West, finalista do Best Games of 2017 no Google Play</span></div>
+        <div class="job"><span class="job-co">Eurocase Argentina</span><span class="job-date">2015 — 2016</span><span class="job-role">UI/UX Designer e ilustrador · jogos educativos para tablets</span></div>
+        <div class="job"><span class="job-co">Glu Mobile</span><span class="job-date">2010 — 2011</span><span class="job-role">QA e tester · Contract Killer, Frontline Commando, Blood &amp; Glory, Deer Hunter</span></div>
+        <div class="job"><span class="job-co">Tortuga Studios</span><span class="job-date">2008 — 2010</span><span class="job-role">Animador 2D e designer · TV Rá-Tim-Bum e advergames para o Cartoon Network</span></div>
+      </div>
+    </section>
+
+    <hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
+
+    <!-- E. Como trabalho -->
+    <section data-g="split" class="about-block" style="padding-bottom:84px">
+      <div>
+        <h2 class="about-h">Como trabalho</h2>
+      </div>
+      <ul class="about-list about-list-2col">
+        <li>Comunicação com equipes multidisciplinares</li>
+        <li>Liderança e gestão de equipes de design</li>
+        <li>Mentoria de designers em início de carreira</li>
+        <li>Defesa de decisões de design com base em dados</li>
+        <li>Escuta ativa durante playtests e sessões de feedback</li>
+        <li>Organização e documentação para handoff</li>
+        <li>Adaptação a prazos curtos e mudanças de escopo</li>
+      </ul>
     </section>
   </div>
   </div>
@@ -478,7 +453,7 @@
 </div>
 
 
-<script src="content/data.js?v=9"></script>
-<script src="js/app.js?v=9"></script>
+<script src="content/data.js?v=12"></script>
+<script src="js/app.js?v=12"></script>
 </body>
 </html>

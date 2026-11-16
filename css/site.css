@@ -29,6 +29,93 @@
 .guide-text { font-size: 15.5px; line-height: 28px; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent); max-width: 44ch; }
 .guide-img { border: 2px solid var(--color-text); box-shadow: 5px 5px 0 0 var(--color-text); }
 
+/* ---------- Sobre mim ---------- */
+.about-intro {
+  display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: 42px clamp(28px, 6vw, 96px); padding: 56px 0 84px; align-items: start;
+}
+.about-side { display: grid; gap: 28px; justify-items: start; }
+.about-side figure { width: 100%; }
+.about-facts { margin: 0; display: grid; width: 100%; }
+.about-facts > div { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-top: 2px solid var(--color-divider); }
+.about-facts > div:last-child { border-bottom: 2px solid var(--color-divider); }
+.about-facts dt { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; padding-top: 2px; }
+.about-facts dd { margin: 0; font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 78%, transparent); }
+
+.about-kicker { font-size: 13px; line-height: 1.4; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent); font-weight: 700; margin: 0 0 20px; }
+.about-quote {
+  font-family: var(--font-heading); font-weight: 800; font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 40px; max-width: 14ch; text-wrap: balance;
+}
+.about-text { max-width: 62ch; }
+.about-text p { font-size: 16.5px; line-height: 30px; margin: 0 0 20px; color: color-mix(in srgb, var(--color-text) 80%, transparent); }
+.about-text p:last-child { margin-bottom: 0; }
+.about-text .about-lead { font-size: 20px; line-height: 32px; color: var(--color-text); font-weight: 600; margin-bottom: 28px; }
+
+.about-block {
+  display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: 28px clamp(28px, 6vw, 96px); padding: 64px 0; align-items: start;
+}
+.about-h { font-family: var(--font-heading); font-weight: 800; font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; margin: 0; }
+.about-note { font-size: 15px; line-height: 26px; margin: 16px 0 0; max-width: 32ch; color: color-mix(in srgb, var(--color-text) 70%, transparent); }
+
+.about-list { list-style: none; margin: 0; padding: 0; display: grid; }
+.about-list li { font-size: 15.5px; line-height: 24px; padding: 13px 0; border-top: 2px solid var(--color-divider); }
+.about-list li:last-child { border-bottom: 2px solid var(--color-divider); }
+/* 2 columns read top-to-bottom (priority order), 4 rows */
+.about-list-2col { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(4, auto); grid-auto-flow: column; column-gap: clamp(24px, 4vw, 56px); align-content: start; }
+.about-list-2col li:nth-child(4) { border-bottom: 2px solid var(--color-divider); }
+
+.skills { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 40px clamp(24px, 4vw, 56px); align-items: start; }
+.skill-side { display: grid; gap: 36px; }
+.skill-group h3 { font-family: var(--font-heading); font-weight: 800; font-size: 20px !important; line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 14px; }
+.skill-main h3 { display: inline-block; background: var(--color-accent); color: #fff; padding: 4px 10px; box-shadow: 3px 3px 0 0 var(--color-text); }
+
+.tools { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 28px clamp(14px, 2vw, 24px); }
+.tools figure { margin: 0; }
+.tools .slot { width: 100%; aspect-ratio: 1 / 1; background: #fff; }
+.tools figcaption { font-size: 13px; margin-top: 8px; color: color-mix(in srgb, var(--color-text) 70%, transparent); }
+
+.jobs { display: grid; }
+.job {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 24px; align-items: baseline;
+  padding: 18px 0; border-top: 2px solid var(--color-divider);
+}
+.job:last-child { border-bottom: 2px solid var(--color-divider); }
+.job-co { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 19px; letter-spacing: -0.01em; }
+.job-date { font-size: 14px; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 60%, transparent); white-space: nowrap; }
+.job-role { grid-column: 1 / -1; font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 78%, transparent); }
+
+@media (max-width: 1024px) {
+  .skills { grid-template-columns: 1fr; }
+  .tools { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 880px) {
+  .about-intro { grid-template-columns: 1fr !important; }
+  .about-side { grid-template-columns: minmax(0, 220px) minmax(0, 1fr); align-items: start; column-gap: 28px; }
+  .about-side figure { grid-row: span 2; }
+  .about-block { padding: 48px 0; }
+}
+@media (max-width: 720px) {
+  .about-quote { font-size: clamp(34px, 10vw, 46px) !important; }
+  .about-h { font-size: 28px !important; }
+  .about-text .about-lead { font-size: 18px; line-height: 30px; }
+}
+@media (max-width: 560px) {
+  .about-side { grid-template-columns: 1fr; }
+  .about-side figure { grid-row: auto; max-width: 280px; }
+  .about-list-2col { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; }
+  .about-list-2col li:nth-child(4) { border-bottom: 0; }
+  .tools { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .hard-btn { width: 100%; text-align: center; }
+}
+
+/* Fix from the original: on tablets the menu ran past the screen edge — let it wrap under the name */
+@media (max-width: 1024px) {
+  .nav { flex-wrap: wrap; row-gap: 14px; }
+  .nav .nav-brand { flex: 1 0 100%; height: auto !important; margin-bottom: 4px; }
+}
+
 /* Fix from the original: the brand's inline 38px/42px height overlapped the menu on phones */
 @media (max-width: 720px) {
   .nav .nav-brand { font-size: clamp(22px, 7.4vw, 38px) !important; height: auto !important; line-height: 1.05 !important; margin-bottom: 8px; }
