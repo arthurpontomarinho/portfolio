@@ -86,13 +86,26 @@ def main():
             w, h = size_of(full)
             images.append({"src": full.relative_to(ROOT).as_posix(),
                            "thumb": thumb.relative_to(ROOT).as_posix(), "w": w, "h": h})
+        # optional "guide": ordered steps [{file, title, text}] shown as a captioned section
+        guide = []
+        for n, g in enumerate(p.get("guide", []), 1):
+            f = ACERVO / g["file"]
+            if not f.exists():
+                print(f"  ! missing guide file: {g['file']}"); continue
+            full, thumb = outdir / f"guide-{n:02d}.jpg", outdir / f"guide-{n:02d}-t.jpg"
+            if not full.exists(): sips(f, full, FULL_PX)
+            if not thumb.exists(): sips(f, thumb, 1000)
+            w, h = size_of(full)
+            guide.append({"title": g["title"], "text": g["text"], "w": w, "h": h,
+                          "src": full.relative_to(ROOT).as_posix(), "thumb": thumb.relative_to(ROOT).as_posix()})
         # drop stale files from previous builds
-        keep = {Path(i["src"]).name for i in images} | {Path(i["thumb"]).name for i in images}
+        keep = {Path(i[k]).name for i in images + guide for k in ("src", "thumb")}
         for old in outdir.iterdir():
             if old.name not in keep: old.unlink()
         print(f"    {len(images)} images")
         proj = {k: v for k, v in p.items() if k not in ("sources", "maxImages", "cover", "draft")}
         proj["images"] = images
+        if guide: proj["guide"] = guide
         projects.append(proj)
 
     payload = {"order": data["order"], "projects": {p["slug"]: p for p in projects}}

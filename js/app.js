@@ -42,6 +42,25 @@
         ${main ? fig(main, "16/9", p.title) : ""}
       </div>
     </section>
+    ${p.guide ? `${hr}
+    <section style="padding:56px 0 28px">
+      <p style="${label};color:var(--color-accent)">Style guide</p>
+      <h2 style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:clamp(30px,3.6vw,44px);line-height:1.1;letter-spacing:-0.015em;margin:0 0 20px">Da série à interface</h2>
+      ${p.guideIntro ? `<p style="font-size:17px;line-height:32px;margin:0;max-width:60ch">${esc(p.guideIntro)}</p>` : ""}
+      <div class="guide">
+        ${p.guide.map((g, i) => `
+        <div class="guide-step" data-g="split">
+          <div>
+            <span class="guide-n">${String(i + 1).padStart(2, "0")}</span>
+            <h3 class="guide-title">${esc(g.title)}</h3>
+            <p class="guide-text">${esc(g.text)}</p>
+          </div>
+          <figure data-lb data-full="${g.src}" style="margin:0;cursor:zoom-in">
+            <div class="slot guide-img" style="aspect-ratio:${g.w}/${g.h}"><img src="${g.thumb}" alt="${esc(p.title)} — ${esc(g.title)}" loading="lazy"></div>
+          </figure>
+        </div>`).join("")}
+      </div>
+    </section>` : ""}
     ${proc.map((g) => `${hr}
     <section style="padding:32px 0">
       <p style="${label};color:var(--color-text)">Processo de design</p>

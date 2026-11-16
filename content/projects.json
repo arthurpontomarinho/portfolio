@@ -36,6 +36,54 @@
       "cover": "captura-de-tela-2026-04-10-as-14-14-59",
       "process": [
         "Projetos/Arvore/Hero"
+      ],
+      "guideIntro": "Para dar à interface a mesma identidade da série, montei um style guide que traduz a estética de The Boys em regras de UI — da escolha dos temas até a forma como a interface se degrada junto com o personagem.",
+      "guide": [
+        {
+          "file": "Projetos/Arvore/Hero/Style Guide/THE SHOW.png",
+          "title": "O seriado",
+          "text": "The Boys é uma sátira sombria sobre super-heróis corruptos. Antes de desenhar qualquer tela, definimos os três temas que a interface precisava transmitir: violência, corrupção e insanidade."
+        },
+        {
+          "file": "Projetos/Arvore/Hero/Style Guide/THE BOYS AESTHETICS.png",
+          "title": "A estética de The Boys",
+          "text": "Analisei a linguagem visual da série e dos pôsteres: imagens rasgadas e desgastadas, símbolos pichados e distorcidos, gore escancarado, contraste brutal e um vermelho que prende o olhar. Cada referência foi ligada a um dos três temas."
+        },
+        {
+          "file": "Projetos/Arvore/Hero/Style Guide/HOW WE TRANSLATED.png",
+          "title": "Do seriado para o jogo",
+          "text": "Essas referências viraram os pilares do sistema de UI: tipografia, cores, ícones e símbolos, formas e texturas, e os ângulos inclinados herdados do logo da série."
+        },
+        {
+          "file": "Projetos/Arvore/Hero/Style Guide/HOW TO USE COLORS.png",
+          "title": "Cores",
+          "text": "Vermelho #BB0404 como cor primária para interação e foco (pointer over e selecionado) e verde-limão #C8F046 como secundária, reservada para notificações sobre o vermelho. Os elementos não interativos ficam numa escala de cinzas, para a cor só aparecer onde importa."
+        },
+        {
+          "file": "Projetos/Arvore/Hero/Style Guide/HOW TO USE FONTS.png",
+          "title": "Tipografia",
+          "text": "Charlie Dont Surf, a fonte do logo da série, garante identidade e reconhecimento imediato: a versão grafite nos títulos de menu e a versão desgastada em botões, submenus e abas. Para leitura, Noto Sans em listas e legendas e Noto Serif em documentos."
+        },
+        {
+          "file": "Projetos/Arvore/Hero/Style Guide/HOW TO USE ICONS.png",
+          "title": "Iconografia",
+          "text": "Ícones pontiagudos, fragmentados e texturizados, derivados do logo da série, dão um tom cru e agressivo à interface sem perder a leitura rápida em VR."
+        },
+        {
+          "file": "Projetos/Arvore/Hero/Style Guide/HOW TO USE SHAPES.png",
+          "title": "Linguagem de formas",
+          "text": "O “sanduíche flat × noisy”: formas simples de cor sólida em camadas sobre formas complexas com textura ruidosa, e vice-versa. A barra de stealth kill e o botão de missões mostram como esse contraste cria profundidade e tensão."
+        },
+        {
+          "file": "Projetos/Arvore/Hero/Style Guide/HOW TO CREATE TEXTURES.png",
+          "title": "Texturas",
+          "text": "Paintovers e rabiscos violentos sobre imagens realistas, símbolos americanos vandalizados, papel rasgado, fita adesiva, colagens e bordas serrilhadas — com a contaminação verde do Temp V como assinatura."
+        },
+        {
+          "file": "Projetos/Arvore/Hero/Style Guide/HOW TO USE - VISUAL PROGRESSION.png",
+          "title": "Progressão visual",
+          "text": "A UI acompanha a narrativa: no início, o menu de pausa mostra um pôster intacto dos Armstrongs. Conforme Lucas consome Temp V e perde a sanidade, o pôster rasga e ganha rabiscos, e as caixas de diálogo se deterioram junto, espelhando a mente do personagem."
+        }
       ]
     },
     {

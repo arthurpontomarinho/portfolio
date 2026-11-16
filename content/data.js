@@ -33,6 +33,81 @@ window.SITE = {
    "process": [
     "Projetos/Arvore/Hero"
    ],
+   "guideIntro": "Para dar à interface a mesma identidade da série, montei um style guide que traduz a estética de The Boys em regras de UI — da escolha dos temas até a forma como a interface se degrada junto com o personagem.",
+   "guide": [
+    {
+     "title": "O seriado",
+     "text": "The Boys é uma sátira sombria sobre super-heróis corruptos. Antes de desenhar qualquer tela, definimos os três temas que a interface precisava transmitir: violência, corrupção e insanidade.",
+     "w": 1600,
+     "h": 836,
+     "src": "assets/img/boys/guide-01.jpg",
+     "thumb": "assets/img/boys/guide-01-t.jpg"
+    },
+    {
+     "title": "A estética de The Boys",
+     "text": "Analisei a linguagem visual da série e dos pôsteres: imagens rasgadas e desgastadas, símbolos pichados e distorcidos, gore escancarado, contraste brutal e um vermelho que prende o olhar. Cada referência foi ligada a um dos três temas.",
+     "w": 1600,
+     "h": 836,
+     "src": "assets/img/boys/guide-02.jpg",
+     "thumb": "assets/img/boys/guide-02-t.jpg"
+    },
+    {
+     "title": "Do seriado para o jogo",
+     "text": "Essas referências viraram os pilares do sistema de UI: tipografia, cores, ícones e símbolos, formas e texturas, e os ângulos inclinados herdados do logo da série.",
+     "w": 1600,
+     "h": 836,
+     "src": "assets/img/boys/guide-03.jpg",
+     "thumb": "assets/img/boys/guide-03-t.jpg"
+    },
+    {
+     "title": "Cores",
+     "text": "Vermelho #BB0404 como cor primária para interação e foco (pointer over e selecionado) e verde-limão #C8F046 como secundária, reservada para notificações sobre o vermelho. Os elementos não interativos ficam numa escala de cinzas, para a cor só aparecer onde importa.",
+     "w": 1600,
+     "h": 834,
+     "src": "assets/img/boys/guide-04.jpg",
+     "thumb": "assets/img/boys/guide-04-t.jpg"
+    },
+    {
+     "title": "Tipografia",
+     "text": "Charlie Dont Surf, a fonte do logo da série, garante identidade e reconhecimento imediato: a versão grafite nos títulos de menu e a versão desgastada em botões, submenus e abas. Para leitura, Noto Sans em listas e legendas e Noto Serif em documentos.",
+     "w": 1600,
+     "h": 836,
+     "src": "assets/img/boys/guide-05.jpg",
+     "thumb": "assets/img/boys/guide-05-t.jpg"
+    },
+    {
+     "title": "Iconografia",
+     "text": "Ícones pontiagudos, fragmentados e texturizados, derivados do logo da série, dão um tom cru e agressivo à interface sem perder a leitura rápida em VR.",
+     "w": 1600,
+     "h": 836,
+     "src": "assets/img/boys/guide-06.jpg",
+     "thumb": "assets/img/boys/guide-06-t.jpg"
+    },
+    {
+     "title": "Linguagem de formas",
+     "text": "O “sanduíche flat × noisy”: formas simples de cor sólida em camadas sobre formas complexas com textura ruidosa, e vice-versa. A barra de stealth kill e o botão de missões mostram como esse contraste cria profundidade e tensão.",
+     "w": 1600,
+     "h": 836,
+     "src": "assets/img/boys/guide-07.jpg",
+     "thumb": "assets/img/boys/guide-07-t.jpg"
+    },
+    {
+     "title": "Texturas",
+     "text": "Paintovers e rabiscos violentos sobre imagens realistas, símbolos americanos vandalizados, papel rasgado, fita adesiva, colagens e bordas serrilhadas — com a contaminação verde do Temp V como assinatura.",
+     "w": 1600,
+     "h": 836,
+     "src": "assets/img/boys/guide-08.jpg",
+     "thumb": "assets/img/boys/guide-08-t.jpg"
+    },
+    {
+     "title": "Progressão visual",
+     "text": "A UI acompanha a narrativa: no início, o menu de pausa mostra um pôster intacto dos Armstrongs. Conforme Lucas consome Temp V e perde a sanidade, o pôster rasga e ganha rabiscos, e as caixas de diálogo se deterioram junto, espelhando a mente do personagem.",
+     "w": 1600,
+     "h": 836,
+     "src": "assets/img/boys/guide-09.jpg",
+     "thumb": "assets/img/boys/guide-09-t.jpg"
+    }
+   ],
    "images": [
     {
      "src": "assets/img/boys/00-captura-de-tela-2026-04-10-as-14-14-59.jpg",
