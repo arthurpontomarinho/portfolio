@@ -141,7 +141,7 @@
     const nome = $("#f-nome").value.trim(), email = $("#f-email").value.trim(), msg = $("#f-msg").value.trim();
     const body = `${msg}\n\n— ${nome}${email ? ` <${email}>` : ""}`;
     location.href = `mailto:arthurmarinho88@icloud.com?subject=${encodeURIComponent("Contato pelo portfolio — " + (nome || "visitante"))}&body=${encodeURIComponent(body)}`;
-    $("#form-note").textContent = "Obrigado — respondo em breve.";
+    $("#form-note").textContent = "Obrigado! Respondo em breve.";
   });
 
   route();
