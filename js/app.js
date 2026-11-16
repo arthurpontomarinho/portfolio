@@ -19,8 +19,9 @@
     const imgs = p.images || [];
     const main = p.card ? { src: p.card } : imgs[0];
     const rest = p.card ? imgs : imgs.slice(1);
-    const proc = [rest.slice(0, 2), rest.slice(2, 4)].filter((g) => g.length);
-    const shots = rest.slice(4, 13);
+    // Projects with a "galleryTitle" show one gallery of every asset instead of "Processo de design" + "Screenshots"
+    const proc = p.galleryTitle ? [] : [rest.slice(0, 2), rest.slice(2, 4)].filter((g) => g.length);
+    const shots = p.galleryTitle ? [] : rest.slice(4, 13);
     const next = order[(order.indexOf(slug) + 1) % order.length];
 
     $("#detail").innerHTML = `
@@ -59,6 +60,18 @@
             <div class="slot guide-img" style="aspect-ratio:${g.w}/${g.h}"><img src="${g.thumb}" alt="${esc(p.title)} — ${esc(g.title)}" loading="lazy"></div>
           </figure>
         </div>`).join("")}
+      </div>
+    </section>` : ""}
+    ${p.galleryTitle ? `${hr}
+    <section style="padding:56px 0">
+      <p style="${label};color:var(--color-accent)">Galeria</p>
+      <h2 style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:clamp(30px,3.6vw,44px);line-height:1.1;letter-spacing:-0.015em;margin:0 0 20px">${esc(p.galleryTitle)}</h2>
+      ${p.galleryIntro ? `<p style="font-size:17px;line-height:32px;margin:0 0 42px;max-width:60ch">${esc(p.galleryIntro)} <span style="color:color-mix(in srgb,var(--color-text) 60%,transparent)">(${rest.length} imagens)</span></p>` : ""}
+      <div class="dev-gallery">
+        ${rest.map((im, i) => `
+        <figure data-lb data-full="${im.src}">
+          <div class="slot" style="aspect-ratio:${im.w}/${im.h}"><img src="${im.thumb}" alt="${esc(p.title)} — asset ${i + 1}" loading="lazy"></div>
+        </figure>`).join("")}
       </div>
     </section>` : ""}
     ${proc.map((g) => `${hr}

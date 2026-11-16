@@ -132,3 +132,10 @@
 h1.sr-only + * { margin-top: 24px !important; }
 h1.sr-only + .about-intro { margin-top: 0 !important; padding-top: 24px; }
 [data-section="contato"] [data-g="contact"] { margin-top: 24px !important; }
+
+/* Development assets gallery (project detail) — masonry, natural aspect ratios */
+.dev-gallery { columns: 3 260px; column-gap: clamp(12px, 1.6vw, 20px); }
+.dev-gallery figure { margin: 0 0 clamp(12px, 1.6vw, 20px); break-inside: avoid; cursor: zoom-in; }
+.dev-gallery .slot { width: 100%; border: 2px solid var(--color-text); transition: transform .15s ease, box-shadow .15s ease; }
+.dev-gallery figure:hover .slot { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 0 var(--color-text); }
+@media (max-width: 560px) { .dev-gallery { columns: 2; } }

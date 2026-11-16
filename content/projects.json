@@ -31,12 +31,10 @@
         "Unity"
       ],
       "sources": [
+        "Projetos/Arvore/Hero",
         "Projetos/Arvore/Hero/The Boys"
       ],
       "cover": "captura-de-tela-2026-04-10-as-14-14-59",
-      "process": [
-        "Projetos/Arvore/Hero"
-      ],
       "guideIntro": "Como levar a identidade visual de The Boys para dentro do jogo? Criamos um style guide que transforma a estética da série em regras de interface, dos temas visuais à deterioração da UI junto com o personagem.",
       "guide": [
         {
@@ -84,7 +82,10 @@
           "title": "Progressão visual",
           "text": "A interface evolui junto com a narrativa. No início, o menu de pausa apresenta um pôster intacto dos Armstrongs. Conforme Lucas consome Temp V e perde a sanidade, o pôster se rasga, ganha rabiscos e as caixas de diálogo se deterioram, refletindo o estado mental do personagem."
         }
-      ]
+      ],
+      "maxImages": 120,
+      "galleryTitle": "Assets de desenvolvimento",
+      "galleryIntro": "Wireframes, estudos de interface, componentes e telas do jogo produzidos ao longo do desenvolvimento."
     },
     {
       "slug": "zoo",
