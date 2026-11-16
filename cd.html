@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coleção — Arthur Marinho</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle cx='60' cy='60' r='54' fill='%236b30ec'/><circle cx='60' cy='60' r='12' fill='%23fff'/></svg>">
+<link rel="stylesheet" href="css/style.css?v=17">
+<style>
+  :root { --case: clamp(190px, 30vw, 300px); }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; overflow: hidden; display: flex; flex-direction: column; user-select: none; -webkit-user-select: none; }
+
+  /* ---------- top bar ---------- */
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px clamp(16px, 5vw, 72px); }
+  .brand { font-family: var(--font-heading); font-weight: 800; font-size: clamp(18px, 2.4vw, 26px); line-height: .95; text-transform: uppercase; color: var(--color-text); }
+  .brand span { color: var(--color-accent); }
+  .back { font-family: var(--font-heading); font-weight: 700; font-size: 15px; text-transform: uppercase; background: #fff; color: var(--color-text); padding: 8px 14px; border: 2px solid var(--color-text); box-shadow: 4px 4px 0 0 var(--color-text); transition: transform .15s; white-space: nowrap; }
+  .back:hover { transform: translate(-2px, -2px); color: var(--color-text); }
+
+  /* ---------- stage ---------- */
+  .stage { position: relative; flex: 1; min-height: 0; perspective: 1400px; perspective-origin: 50% 40%; cursor: grab; touch-action: pan-y; outline: none; }
+  .stage.dragging { cursor: grabbing; }
+  .track { position: absolute; left: 50%; top: 46%; width: 0; height: 0; transform-style: preserve-3d; }
+
+  .cd { position: absolute; width: var(--case); height: var(--case); left: calc(var(--case) / -2); top: calc(var(--case) / -2);
+        transform-style: preserve-3d; will-change: transform; }
+  .cd-inner { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform .45s cubic-bezier(.2,.8,.2,1); }
+
+  /* disc (behind the case, slides out when active) */
+  .disc { position: absolute; width: 92%; height: 92%; left: 4%; top: 4%; border-radius: 50%;
+          transform: translate3d(0, 0, -6px); transition: transform .6s cubic-bezier(.2,.8,.2,1);
+          box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .disc-spin { position: absolute; inset: 0; border-radius: 50%; overflow: hidden;
+               background: conic-gradient(from 20deg, #e9e9ee, #b8f3ff, #f6c4ff, #fff6b0, #c5ffd2, #e9e9ee, #b8c8ff, #ffd0e0, #e9e9ee); }
+  .disc-spin::before { /* printed label */
+    content: ""; position: absolute; inset: 7%; border-radius: 50%; background-image: var(--art); background-size: cover; background-position: center;
+    -webkit-mask: radial-gradient(circle, transparent 0 17%, #000 17.5%); mask: radial-gradient(circle, transparent 0 17%, #000 17.5%);
+  }
+  .disc-spin::after { /* hub + hole + sheen */
+    content: ""; position: absolute; inset: 0; border-radius: 50%;
+    background:
+      radial-gradient(circle, transparent 0 7%, rgba(255,255,255,.9) 7.4% 9%, rgba(200,200,210,.85) 9.2% 15%, rgba(255,255,255,.0) 15.5%),
+      linear-gradient(115deg, transparent 35%, rgba(255,255,255,.45) 48%, transparent 62%);
+    -webkit-mask: radial-gradient(circle, transparent 0 7%, #000 7.4%); mask: radial-gradient(circle, transparent 0 7%, #000 7.4%);
+  }
+  .cd.active .disc { transform: translate3d(58%, 0, -6px); }
+  .cd.active .disc-spin { animation: spin 3.2s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* jewel case */
+  .case { position: absolute; inset: 0; transform-style: preserve-3d; }
+  .case-front { position: absolute; inset: 0; background: #111 var(--art) center / cover no-repeat;
+                border: 2px solid var(--color-text); box-shadow: 6px 6px 0 0 var(--color-text); overflow: hidden; }
+  .case-front::before { /* hinge strip */
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 7%;
+    background: linear-gradient(90deg, rgba(0,0,0,.55), rgba(255,255,255,.18) 40%, rgba(0,0,0,.35));
+    border-right: 1px solid rgba(255,255,255,.25);
+  }
+  .case-front::after { /* plastic gloss */
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(125deg, rgba(255,255,255,.38) 0%, rgba(255,255,255,.08) 28%, transparent 42%, transparent 70%, rgba(255,255,255,.12) 100%);
+  }
+  .case-num { position: absolute; right: 8px; top: 8px; z-index: 2; background: var(--color-accent); color: #fff; font: 800 12px/1 var(--font-heading);
+              padding: 5px 7px; box-shadow: 2px 2px 0 0 var(--color-text); }
+  .case-side { /* case thickness */
+    position: absolute; top: 0; right: -14px; width: 14px; height: 100%; background: linear-gradient(#2a2829, #111);
+    transform-origin: left center; transform: rotateY(90deg); border: 2px solid var(--color-text);
+  }
+  .cd.active .case-front { box-shadow: 8px 8px 0 0 var(--color-accent); }
+
+  /* floor reflection */
+  .reflect { position: absolute; left: 0; right: 0; top: calc(100% + 10px); height: 40%; background: var(--art) center top / cover no-repeat;
+             transform: scaleY(-1); opacity: .16; -webkit-mask: linear-gradient(to top, #000, transparent 70%); mask: linear-gradient(to top, #000, transparent 70%); pointer-events: none; }
+
+  /* ---------- info ---------- */
+  .info { padding: 0 clamp(16px, 5vw, 72px) clamp(20px, 4vh, 40px); text-align: center; min-height: 190px; }
+  .info .count { font: 700 13px/1 var(--font-heading); letter-spacing: .08em; color: var(--color-accent); margin: 0 0 10px; }
+  .info .meta { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 8px; }
+  .info h1 { font-size: clamp(28px, 4vw, 46px); line-height: 1.05; margin: 0 0 10px; }
+  .info .lead { font-size: 15px; line-height: 24px; max-width: 58ch; margin: 0 auto 18px; color: color-mix(in srgb, var(--color-text) 78%, transparent); }
+  .open { display: inline-block; background: var(--color-accent); color: #fff; font: 700 17px/1 var(--font-heading); padding: 12px 18px;
+          border: 2px solid var(--color-text); box-shadow: 5px 5px 0 0 var(--color-text); transition: transform .15s; }
+  .open:hover { color: #fff; transform: translate(-2px, -2px); }
+  .hint { position: absolute; left: 0; right: 0; bottom: 6px; text-align: center; font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+          color: color-mix(in srgb, var(--color-text) 55%, transparent); pointer-events: none; }
+  .arrow { position: absolute; top: 46%; transform: translateY(-50%); z-index: 500; width: 48px; height: 48px; display: grid; place-items: center;
+           background: #fff; border: 2px solid var(--color-text); box-shadow: 4px 4px 0 0 var(--color-text); font: 800 22px/1 var(--font-heading); cursor: pointer; color: var(--color-text); }
+  .arrow:hover { background: var(--color-accent); color: #fff; }
+  .arrow.prev { left: clamp(10px, 3vw, 48px); } .arrow.next { right: clamp(10px, 3vw, 48px); }
+
+  .no-anim .disc, .no-anim .cd-inner { transition: none !important; }
+
+  @media (max-width: 640px) {
+    .hint { font-size: 10px; letter-spacing: .04em; }
+    .info .lead { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .arrow { width: 40px; height: 40px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cd.active .disc-spin { animation: none; }
+    .cd-inner, .disc { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <header class="bar">
+    <div class="brand">Arthur Marinho<br><span>Coleção</span></div>
+    <a class="back" href="index.html#jogos">← Portfólio</a>
+  </header>
+
+  <div class="stage" id="stage" tabindex="0" aria-label="Seletor de projetos. Use as setas para trocar e Enter para abrir.">
+    <div class="track" id="track"></div>
+    <button class="arrow prev" id="prev" aria-label="Projeto anterior">‹</button>
+    <button class="arrow next" id="next" aria-label="Próximo projeto">›</button>
+    <p class="hint">Arraste · ← → · clique no CD do meio para abrir</p>
+  </div>
+
+  <section class="info" aria-live="polite">
+    <p class="count" id="i-count"></p>
+    <p class="meta" id="i-meta"></p>
+    <h1 id="i-title"></h1>
+    <p class="lead" id="i-lead"></p>
+    <a class="open" id="i-open" href="#">Abrir projeto →</a>
+  </section>
+
+<script src="content/data.js?v=17"></script>
+<script>
+(() => {
+  const { order, projects } = window.SITE;
+  const list = order.map((slug) => {
+    const p = projects[slug];
+    const art = p.card || (p.images[0] && (p.images[0].thumb || p.images[0].src)) || "";
+    return { slug, ...p, art };
+  });
+  const N = list.length;
+  const track = document.getElementById("track");
+  const stage = document.getElementById("stage");
+
+  track.innerHTML = list.map((p, i) => `
+    <div class="cd" data-i="${i}" style="--art:url('${p.art}')">
+      <div class="cd-inner">
+        <div class="disc"><div class="disc-spin"></div></div>
+        <div class="case">
+          <div class="case-front"><span class="case-num">${String(i + 1).padStart(2, "0")}</span></div>
+          <div class="case-side"></div>
+        </div>
+        <div class="reflect"></div>
+      </div>
+    </div>`).join("");
+  const cds = [...track.children];
+
+  // ---------- layout ----------
+  let pos = 0, target = 0, active = -1, raf = 0;
+  const caseSize = () => cds[0].offsetWidth;
+
+  function layout() {
+    const s = caseSize();
+    cds.forEach((el, i) => {
+      const d = i - pos, a = Math.abs(d), sign = Math.sign(d);
+      // the right side gets extra room for the disc that slides out of the active case
+      const first = d > 0 ? 1.4 : 1.0;
+      const x = a < 1 ? d * s * first : sign * (s * first + (a - 1) * s * 0.42);
+      const ry = Math.max(-62, Math.min(62, -d * 62));
+      const z = -Math.min(a, 1) * s * 0.55 - Math.max(0, a - 1) * s * 0.12;
+      el.style.transform = `translate3d(${x}px,0,${z}px) rotateY(${ry}deg)`;
+      el.style.zIndex = String(1000 - Math.round(a * 10));
+      el.style.opacity = a > 5.5 ? "0" : String(1 - Math.max(0, a - 3.5) * 0.5);
+      el.style.pointerEvents = a > 5.5 ? "none" : "";
+    });
+    const now = ((Math.round(pos) % N) + N) % N;
+    if (now !== active) setActive(now);
+  }
+
+  function setActive(i) {
+    active = i;
+    cds.forEach((el, k) => el.classList.toggle("active", k === i));
+    const p = list[i];
+    document.getElementById("i-count").textContent = `${String(i + 1).padStart(2, "0")} / ${String(N).padStart(2, "0")}`;
+    document.getElementById("i-meta").textContent = p.meta || "";
+    document.getElementById("i-title").textContent = p.title;
+    document.getElementById("i-lead").textContent = p.lead || "";
+    document.getElementById("i-open").href = `index.html#p/${p.slug}`;
+  }
+
+  function animate() {
+    cancelAnimationFrame(raf);
+    const step = () => {
+      pos += (target - pos) * 0.16;
+      if (Math.abs(target - pos) < 0.001) pos = target;
+      layout();
+      if (pos !== target) raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+  }
+  const clampT = (t) => Math.max(0, Math.min(N - 1, t));
+  const go = (t) => { target = clampT(Math.round(t)); animate(); };
+
+  // ---------- drag ----------
+  let drag = null;
+  stage.addEventListener("pointerdown", (e) => {
+    if (e.target.closest(".arrow")) return;
+    drag = { x: e.clientX, start: pos, moved: 0, id: e.pointerId, t: performance.now(), lastX: e.clientX, v: 0 };
+    stage.setPointerCapture(e.pointerId);
+    stage.classList.add("dragging");
+    cancelAnimationFrame(raf);
+  });
+  stage.addEventListener("pointermove", (e) => {
+    if (!drag) return;
+    const dx = e.clientX - drag.x;
+    drag.moved = Math.max(drag.moved, Math.abs(dx));
+    const now = performance.now();
+    drag.v = (e.clientX - drag.lastX) / Math.max(1, now - drag.t);
+    drag.lastX = e.clientX; drag.t = now;
+    pos = target = Math.max(-0.4, Math.min(N - 0.6, drag.start - dx / (caseSize() * 0.85)));
+    layout();
+  });
+  const end = (e) => {
+    if (!drag) return;
+    const d = drag; drag = null;
+    stage.classList.remove("dragging");
+    if (d.moved < 6) { // click
+      const cd = document.elementFromPoint(e.clientX, e.clientY)?.closest(".cd");
+      if (cd) {
+        const i = +cd.dataset.i;
+        if (i === active && Math.abs(pos - i) < 0.3) location.href = `index.html#p/${list[i].slug}`;
+        else go(i);
+      } else go(pos);
+      return;
+    }
+    const momentum = Math.max(-1.5, Math.min(1.5, -d.v * 0.9)); // a flick moves 1–2 CDs at most
+    go(pos + momentum);
+  };
+  stage.addEventListener("pointerup", end);
+  stage.addEventListener("pointercancel", end);
+
+  // ---------- wheel / keys / arrows ----------
+  let wheelLock = 0;
+  stage.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    const now = performance.now();
+    if (now < wheelLock) return;
+    const d = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+    if (Math.abs(d) < 4) return;
+    wheelLock = now + 140;
+    go(target + Math.sign(d));
+  }, { passive: false });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") go(target + 1);
+    else if (e.key === "ArrowLeft") go(target - 1);
+    else if (e.key === "Home") go(0);
+    else if (e.key === "End") go(N - 1);
+    else if (e.key === "Enter") location.href = `index.html#p/${list[active].slug}`;
+  });
+  document.getElementById("prev").addEventListener("click", () => go(target - 1));
+  document.getElementById("next").addEventListener("click", () => go(target + 1));
+  window.addEventListener("resize", layout);
+
+  // deep link: cd.html#westy
+  const startSlug = location.hash.slice(1);
+  const startI = list.findIndex((p) => p.slug === startSlug);
+  pos = target = startI >= 0 ? startI : 0;
+  // first paint without transitions, so the active disc is already out of its case
+  document.body.classList.add("no-anim");
+  layout();
+  requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.remove("no-anim")));
+  stage.focus({ preventScroll: true });
+})();
+</script>
+</body>
+</html>
