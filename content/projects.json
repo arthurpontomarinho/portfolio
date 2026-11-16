@@ -24,7 +24,7 @@
       "card": "assets/orig/p-boys.webp",
       "meta": "ARVORE · VR · Unity",
       "lead": "UX e UI de uma experiência em realidade virtual: leitura rápida em movimento, conforto e interação com as duas mãos.",
-      "role": "Fui UI/UX Designer e Game Designer do jogo da ARVORE para Meta Quest e PS VR, no universo caótico de The Boys. Desenhei os sistemas de interface espacial, o HUD diegético e os fluxos de interação pensados para gameplay intenso em VR — além do style guide que orienta cores, fontes, texturas e animações da UI.",
+      "role": "Atuei como UI/UX Designer e Game Designer no time da ARVORE, no jogo para Meta Quest e PS VR no universo caótico de The Boys. Desenhamos os sistemas de interface espacial, o HUD diegético e os fluxos de interação pensados para gameplay intenso em VR — além do style guide que orienta cores, fontes, texturas e animações da UI.",
       "tags": [
         "UX & UI",
         "VR",
@@ -37,7 +37,7 @@
       "process": [
         "Projetos/Arvore/Hero"
       ],
-      "guideIntro": "Para dar à interface a mesma identidade da série, montei um style guide que traduz a estética de The Boys em regras de UI — da escolha dos temas até a forma como a interface se degrada junto com o personagem.",
+      "guideIntro": "Para dar à interface a mesma identidade da série, montamos um style guide que traduz a estética de The Boys em regras de UI — da escolha dos temas até a forma como a interface se degrada junto com o personagem.",
       "guide": [
         {
           "file": "Projetos/Arvore/Hero/Style Guide/THE SHOW.png",
@@ -47,7 +47,7 @@
         {
           "file": "Projetos/Arvore/Hero/Style Guide/THE BOYS AESTHETICS.png",
           "title": "A estética de The Boys",
-          "text": "Analisei a linguagem visual da série e dos pôsteres: imagens rasgadas e desgastadas, símbolos pichados e distorcidos, gore escancarado, contraste brutal e um vermelho que prende o olhar. Cada referência foi ligada a um dos três temas."
+          "text": "Analisamos a linguagem visual da série e dos pôsteres: imagens rasgadas e desgastadas, símbolos pichados e distorcidos, gore escancarado, contraste brutal e um vermelho que prende o olhar. Cada referência foi ligada a um dos três temas."
         },
         {
           "file": "Projetos/Arvore/Hero/Style Guide/HOW WE TRANSLATED.png",
@@ -91,8 +91,8 @@
       "title": "Idle Star Zoo",
       "card": "assets/orig/p-zoo.webp",
       "meta": "Casual Mobile · Unity · 2022",
-      "lead": "Jogo mobile de zoológico espacial com criaturas exóticas. Projetei as interfaces e criei centenas de modelos 3D, equilibrando criatividade e usabilidade.",
-      "role": "Criei os modelos voxel, a estética geral do jogo e toda a UI/UX — da gestão do zoológico à coleção de animais alienígenas — com navegação limpa e uma progressão fluida para o jogador.",
+      "lead": "Jogo mobile de zoológico espacial com criaturas exóticas. Projetamos as interfaces e criamos centenas de modelos 3D, equilibrando criatividade e usabilidade.",
+      "role": "Criamos os modelos voxel, a estética geral do jogo e toda a UI/UX — da gestão do zoológico à coleção de animais alienígenas — com navegação limpa e uma progressão fluida para o jogador.",
       "tags": [
         "UX & UI",
         "3D",
@@ -108,8 +108,8 @@
       "title": "Slink Snatch",
       "card": "assets/orig/p-slink.webp",
       "meta": "VR · Level Design",
-      "lead": "Jogo em VR: interação com as mãos e leitura de espaço. Cuidei de UX, UI e level design.",
-      "role": "Jogo de ação imersivo em VR desenvolvido na Venturion. Fui responsável por todo o UX/UI: elementos de interface espacial intuitivos e fluxos de interação confortáveis, otimizados para jogar em realidade virtual.",
+      "lead": "Jogo em VR: interação com as mãos e leitura de espaço. Cuidamos de UX, UI e level design.",
+      "role": "Jogo de ação imersivo em VR desenvolvido pelo time da Venturion. Desenhamos o UX/UI do jogo: elementos de interface espacial intuitivos e fluxos de interação confortáveis, otimizados para jogar em realidade virtual.",
       "tags": [
         "UX & UI",
         "Level Design",
@@ -125,7 +125,7 @@
       "card": "assets/orig/p-fire.webp",
       "meta": "Mobile · Hypercasual",
       "lead": "Hypercasual: o jogador entende o jogo no primeiro toque. UX, UI e ilustração 2D.",
-      "role": "Survival action mobile de ritmo rápido contra hordas de inimigos. Fiz todo o UX/UI — HUD, navegação de menus e sistemas de layout limpos — pensado para uma jogatina intensa no celular.",
+      "role": "Survival action mobile de ritmo rápido contra hordas de inimigos. Desenvolvemos o UX/UI — HUD, navegação de menus e sistemas de layout limpos — pensado para uma jogatina intensa no celular.",
       "tags": [
         "UX & UI",
         "2D",
@@ -142,7 +142,7 @@
       "card": "assets/orig/p-westy.jpg",
       "meta": "Autoral · Mobile · Unity · 2016",
       "lead": "Jogo mobile de sobrevivência western em mundo aberto estilo voxel art, co-criado com Marcelo Barce. Best of 2017 no Google Play e mais de 3 milhões de downloads.",
-      "role": "Desenvolvido no meu estúdio indie, a Countryside Games. Fui responsável por toda a identidade visual: arte, design de personagens, animações e UI/UX, criando um mundo retrô charmoso e coeso.",
+      "role": "Desenvolvido no nosso estúdio indie, a Countryside Games. Construímos toda a identidade visual: arte, design de personagens, animações e UI/UX, criando um mundo retrô charmoso e coeso.",
       "tags": [
         "UX & UI",
         "Design",
@@ -159,7 +159,7 @@
       "card": "assets/orig/p-mad.webp",
       "meta": "Autoral · Mobile · Indie",
       "lead": "Projeto autoral de puzzle, do game design aos níveis. UX, UI, game design e level design.",
-      "role": "Mad Brains – Zombie Paradise: ação em arena contra hordas de zumbis e outros jogadores. Como Lead UI/UX Designer, desenhei a interface, os fluxos e os layouts de HUD para uma navegação fluida em partidas de alta intensidade.",
+      "role": "Mad Brains – Zombie Paradise: ação em arena contra hordas de zumbis e outros jogadores. Atuei como Lead UI/UX Designer; desenhamos a interface, os fluxos e os layouts de HUD para uma navegação fluida em partidas de alta intensidade.",
       "tags": [
         "UX & UI",
         "Game Design",
@@ -175,7 +175,7 @@
       "title": "Victory Head Rally",
       "meta": "Mobile · Porting",
       "lead": "UX & UI · 2D · Ilustração · Mobile · Porting",
-      "role": "Levei a experiência de corrida de console e PC para o celular: redesenhei os esquemas de controle, o input por toque e a UI adaptativa para uma jogabilidade responsiva em telas menores.",
+      "role": "Levamos a experiência de corrida de console e PC para o celular: redesenhamos os esquemas de controle, o input por toque e a UI adaptativa para uma jogabilidade responsiva em telas menores.",
       "tags": [
         "UX & UI",
         "2D",
@@ -193,7 +193,7 @@
       "title": "Medieval Tower Defense",
       "meta": "Mobile · Autoral",
       "lead": "UX & UI · 3D · Voxel Art · Mobile · Autoral",
-      "role": "Tower defense estratégico para mobile em mundos voxel coloridos. Criei todos os assets 3D voxel e a UI/UX completa, com visão tática clara e controles intuitivos.",
+      "role": "Tower defense estratégico para mobile em mundos voxel coloridos. Criamos os assets 3D voxel e a UI/UX, com visão tática clara e controles intuitivos.",
       "tags": [
         "UX & UI",
         "3D",
@@ -228,7 +228,7 @@
       "title": "Carreta Legends",
       "meta": "Mobile · Autoral",
       "lead": "UI · 2D · Pixel Art · Mobile · Autoral",
-      "role": "Carreta Legends – Heróis do Furacão: jogo mobile de ritmo e precisão que homenageia os personagens icônicos da Carreta Furacão com pulos e acrobacias. Fiz toda a criação visual: personagens, cenários e direção de arte.",
+      "role": "Carreta Legends – Heróis do Furacão: jogo mobile de ritmo e precisão que homenageia os personagens icônicos da Carreta Furacão com pulos e acrobacias. Cuidamos da criação visual: personagens, cenários e direção de arte.",
       "tags": [
         "UI",
         "2D",
@@ -246,7 +246,7 @@
       "title": "Case AFS Visual Farm",
       "meta": "App · VR · Unity",
       "lead": "Visualização de fazenda para quem trabalha em campo: UX, UI e ilustração.",
-      "role": "Showroom virtual da CASE IH com modelos 3D interativos em escala de maquinário agrícola. Liderei o UX/UI em VR e web: controles espaciais intuitivos no VR, navegação fluida na web e painéis holográficos para simplificar a demonstração dos produtos.",
+      "role": "Showroom virtual da CASE IH com modelos 3D interativos em escala de maquinário agrícola. Desenhamos o UX/UI em VR e web: controles espaciais intuitivos no VR, navegação fluida na web e painéis holográficos para simplificar a demonstração dos produtos.",
       "tags": [
         "UX & UI",
         "Ilustração"
@@ -262,7 +262,7 @@
       "title": "Petrobras VR Ride",
       "meta": "VR · Ride · Unity",
       "lead": "Uma narrativa em VR com tempo fechado: UX, animação e timeline sincronizada ao movimento.",
-      "role": "Ride em VR para os 70 anos da Petrobras. Cuidei do UX, das animações e da timeline sincronizada ao movimento do brinquedo, para contar a história no tempo exato da experiência.",
+      "role": "Ride em VR para os 70 anos da Petrobras. Cuidamos do UX, das animações e da timeline sincronizada ao movimento do brinquedo, para contar a história no tempo exato da experiência.",
       "tags": [
         "UX & UI",
         "Animação",
@@ -294,7 +294,7 @@
       "title": "Case Vex VR",
       "meta": "VR · Web · App",
       "lead": "UX & UI · Design · VR · Web · App",
-      "role": "Showroom imersivo em VR e web com tratores CASE IH em um ambiente realista. Fui responsável pelo UX/UI e pelos fluxos de interação: navegação espacial no VR e exploração dos produtos na web.",
+      "role": "Showroom imersivo em VR e web com tratores CASE IH em um ambiente realista. Desenhamos o UX/UI e os fluxos de interação: navegação espacial no VR e exploração dos produtos na web.",
       "tags": [
         "UX & UI",
         "Design",
@@ -312,7 +312,7 @@
       "title": "Estacio Medical",
       "meta": "App · PC · Multiplayer",
       "lead": "UX & UI · Ilustração · App · PC · Multiplayer",
-      "role": "Aplicativo de simulação clínica para estudantes de medicina praticarem cenários reais de hospital e cuidado com o paciente. Liderei o UX/UI: fluxos intuitivos, sistemas claros de tomada de decisão e HUDs realistas de monitoramento do paciente.",
+      "role": "Aplicativo de simulação clínica para estudantes de medicina praticarem cenários reais de hospital e cuidado com o paciente. Desenhamos o UX/UI: fluxos intuitivos, sistemas claros de tomada de decisão e HUDs realistas de monitoramento do paciente.",
       "tags": [
         "UX & UI",
         "Ilustração",
