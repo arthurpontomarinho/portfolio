@@ -106,613 +106,151 @@ window.SITE = {
     }
    ],
    "galleryTitle": "Assets de desenvolvimento",
-   "galleryIntro": "Wireframes, estudos de interface, componentes e telas do jogo produzidos ao longo do desenvolvimento.",
+   "galleryIntro": "Uma seleção do processo: referências, wireframes, componentes de interface e as telas finais dentro do jogo.",
    "images": [
     {
-     "src": "assets/img/boys/00-captura-de-tela-2026-04-10-as-14-14-59.jpg",
-     "thumb": "assets/img/boys/00-captura-de-tela-2026-04-10-as-14-14-59-t.jpg",
-     "w": 1600,
-     "h": 1003
-    },
-    {
-     "src": "assets/img/boys/01-buttons.jpg",
-     "thumb": "assets/img/boys/01-buttons-t.jpg",
-     "w": 1600,
-     "h": 764
-    },
-    {
-     "src": "assets/img/boys/02-captura-de-tela-2024-11-11-as-11-22-15-1.jpg",
-     "thumb": "assets/img/boys/02-captura-de-tela-2024-11-11-as-11-22-15-1-t.jpg",
+     "src": "assets/img/boys/00-captura-de-tela-2024-11-11-as-11-22-15-1.jpg",
+     "thumb": "assets/img/boys/00-captura-de-tela-2024-11-11-as-11-22-15-1-t.jpg",
      "w": 1600,
      "h": 1172
     },
     {
-     "src": "assets/img/boys/03-debriefing.jpg",
-     "thumb": "assets/img/boys/03-debriefing-t.jpg",
-     "w": 1600,
-     "h": 616
-    },
-    {
-     "src": "assets/img/boys/04-dialogue.jpg",
-     "thumb": "assets/img/boys/04-dialogue-t.jpg",
-     "w": 1600,
-     "h": 699
-    },
-    {
-     "src": "assets/img/boys/05-estudos.jpg",
-     "thumb": "assets/img/boys/05-estudos-t.jpg",
-     "w": 1600,
-     "h": 1557
-    },
-    {
-     "src": "assets/img/boys/06-frame-11.jpg",
-     "thumb": "assets/img/boys/06-frame-11-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/07-frame-3.jpg",
-     "thumb": "assets/img/boys/07-frame-3-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/08-frame-562.jpg",
-     "thumb": "assets/img/boys/08-frame-562-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/09-frame-563.jpg",
-     "thumb": "assets/img/boys/09-frame-563-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/10-frame-9.jpg",
-     "thumb": "assets/img/boys/10-frame-9-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/11-missions-panel.jpg",
-     "thumb": "assets/img/boys/11-missions-panel-t.jpg",
-     "w": 1600,
-     "h": 700
-    },
-    {
-     "src": "assets/img/boys/12-notification.jpg",
-     "thumb": "assets/img/boys/12-notification-t.jpg",
-     "w": 1600,
-     "h": 616
-    },
-    {
-     "src": "assets/img/boys/13-options-1.jpg",
-     "thumb": "assets/img/boys/13-options-1-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/14-options.jpg",
-     "thumb": "assets/img/boys/14-options-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/15-pause-wireframe-6.jpg",
-     "thumb": "assets/img/boys/15-pause-wireframe-6-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/16-pause-wireframe-7.jpg",
-     "thumb": "assets/img/boys/16-pause-wireframe-7-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/17-pause-wireframe-block-test-4.jpg",
-     "thumb": "assets/img/boys/17-pause-wireframe-block-test-4-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/18-pause-wireframe-game-log.jpg",
-     "thumb": "assets/img/boys/18-pause-wireframe-game-log-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/19-pause-wireframe-home-basic-1.jpg",
-     "thumb": "assets/img/boys/19-pause-wireframe-home-basic-1-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/20-pause-wireframe-home-basic-2.jpg",
-     "thumb": "assets/img/boys/20-pause-wireframe-home-basic-2-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/21-pause-wireframe-home-basic.jpg",
-     "thumb": "assets/img/boys/21-pause-wireframe-home-basic-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/22-pause-wireframe-hub-base-1.jpg",
-     "thumb": "assets/img/boys/22-pause-wireframe-hub-base-1-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/23-pause-wireframe-hub-base.jpg",
-     "thumb": "assets/img/boys/23-pause-wireframe-hub-base-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/24-pause-wireframe-level.jpg",
-     "thumb": "assets/img/boys/24-pause-wireframe-level-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/25-pause-wireframe-log.jpg",
-     "thumb": "assets/img/boys/25-pause-wireframe-log-t.jpg",
-     "w": 1600,
-     "h": 954
-    },
-    {
-     "src": "assets/img/boys/26-pause-wireframe-2-base.jpg",
-     "thumb": "assets/img/boys/26-pause-wireframe-2-base-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/27-pause-wireframe-2-collection.jpg",
-     "thumb": "assets/img/boys/27-pause-wireframe-2-collection-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/28-pause-wireframe-2-hub.jpg",
-     "thumb": "assets/img/boys/28-pause-wireframe-2-hub-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/29-pause-wireframe-2-logs.jpg",
-     "thumb": "assets/img/boys/29-pause-wireframe-2-logs-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/30-pause-wireframe-2-option.jpg",
-     "thumb": "assets/img/boys/30-pause-wireframe-2-option-t.jpg",
-     "w": 1600,
-     "h": 900
-    },
-    {
-     "src": "assets/img/boys/31-popups.jpg",
-     "thumb": "assets/img/boys/31-popups-t.jpg",
-     "w": 1600,
-     "h": 574
-    },
-    {
-     "src": "assets/img/boys/32-wireframe-options.jpg",
-     "thumb": "assets/img/boys/32-wireframe-options-t.jpg",
-     "w": 1600,
-     "h": 923
-    },
-    {
-     "src": "assets/img/boys/33-wireframe-logs.jpg",
-     "thumb": "assets/img/boys/33-wireframe-logs-t.jpg",
+     "src": "assets/img/boys/01-wireframe-logs.jpg",
+     "thumb": "assets/img/boys/01-wireframe-logs-t.jpg",
      "w": 1600,
      "h": 1159
     },
     {
-     "src": "assets/img/boys/34-wireframe.jpg",
-     "thumb": "assets/img/boys/34-wireframe-t.jpg",
+     "src": "assets/img/boys/02-options-1.jpg",
+     "thumb": "assets/img/boys/02-options-1-t.jpg",
      "w": 1600,
-     "h": 838
+     "h": 900
     },
     {
-     "src": "assets/img/boys/35-captura-de-tela-2026-04-10-as-14-12-10.jpg",
-     "thumb": "assets/img/boys/35-captura-de-tela-2026-04-10-as-14-12-10-t.jpg",
+     "src": "assets/img/boys/03-pause-wireframe-home-basic-1.jpg",
+     "thumb": "assets/img/boys/03-pause-wireframe-home-basic-1-t.jpg",
      "w": 1600,
-     "h": 839
+     "h": 954
     },
     {
-     "src": "assets/img/boys/36-captura-de-tela-2026-04-10-as-14-12-29.jpg",
-     "thumb": "assets/img/boys/36-captura-de-tela-2026-04-10-as-14-12-29-t.jpg",
+     "src": "assets/img/boys/04-pause-wireframe-home-basic.jpg",
+     "thumb": "assets/img/boys/04-pause-wireframe-home-basic-t.jpg",
      "w": 1600,
-     "h": 803
+     "h": 954
     },
     {
-     "src": "assets/img/boys/37-captura-de-tela-2026-04-10-as-14-13-20.jpg",
-     "thumb": "assets/img/boys/37-captura-de-tela-2026-04-10-as-14-13-20-t.jpg",
+     "src": "assets/img/boys/05-buttons.jpg",
+     "thumb": "assets/img/boys/05-buttons-t.jpg",
      "w": 1600,
-     "h": 371
+     "h": 764
     },
     {
-     "src": "assets/img/boys/38-captura-de-tela-2026-04-10-as-14-13-41.jpg",
-     "thumb": "assets/img/boys/38-captura-de-tela-2026-04-10-as-14-13-41-t.jpg",
-     "w": 1316,
-     "h": 1600
-    },
-    {
-     "src": "assets/img/boys/39-captura-de-tela-2026-04-10-as-14-13-46.jpg",
-     "thumb": "assets/img/boys/39-captura-de-tela-2026-04-10-as-14-13-46-t.jpg",
-     "w": 1600,
-     "h": 1281
-    },
-    {
-     "src": "assets/img/boys/40-captura-de-tela-2026-04-10-as-14-13-54.jpg",
-     "thumb": "assets/img/boys/40-captura-de-tela-2026-04-10-as-14-13-54-t.jpg",
-     "w": 1437,
-     "h": 1600
-    },
-    {
-     "src": "assets/img/boys/41-captura-de-tela-2026-04-10-as-14-14-15.jpg",
-     "thumb": "assets/img/boys/41-captura-de-tela-2026-04-10-as-14-14-15-t.jpg",
-     "w": 1063,
-     "h": 1600
-    },
-    {
-     "src": "assets/img/boys/42-captura-de-tela-2026-04-10-as-14-15-09.jpg",
-     "thumb": "assets/img/boys/42-captura-de-tela-2026-04-10-as-14-15-09-t.jpg",
-     "w": 1600,
-     "h": 1035
-    },
-    {
-     "src": "assets/img/boys/43-captura-de-tela-2026-04-10-as-14-15-19.jpg",
-     "thumb": "assets/img/boys/43-captura-de-tela-2026-04-10-as-14-15-19-t.jpg",
-     "w": 1600,
-     "h": 802
-    },
-    {
-     "src": "assets/img/boys/44-captura-de-tela-2026-04-10-as-14-15-26.jpg",
-     "thumb": "assets/img/boys/44-captura-de-tela-2026-04-10-as-14-15-26-t.jpg",
-     "w": 976,
-     "h": 1600
-    },
-    {
-     "src": "assets/img/boys/45-captura-de-tela-2026-04-10-as-14-15-37.jpg",
-     "thumb": "assets/img/boys/45-captura-de-tela-2026-04-10-as-14-15-37-t.jpg",
-     "w": 1600,
-     "h": 1450
-    },
-    {
-     "src": "assets/img/boys/46-captura-de-tela-2026-04-10-as-14-16-02.jpg",
-     "thumb": "assets/img/boys/46-captura-de-tela-2026-04-10-as-14-16-02-t.jpg",
-     "w": 1277,
-     "h": 1600
-    },
-    {
-     "src": "assets/img/boys/47-captura-de-tela-2026-04-10-as-14-17-24.jpg",
-     "thumb": "assets/img/boys/47-captura-de-tela-2026-04-10-as-14-17-24-t.jpg",
-     "w": 1600,
-     "h": 619
-    },
-    {
-     "src": "assets/img/boys/48-captura-de-tela-2026-04-10-as-14-17-37.jpg",
-     "thumb": "assets/img/boys/48-captura-de-tela-2026-04-10-as-14-17-37-t.jpg",
-     "w": 1600,
-     "h": 1021
-    },
-    {
-     "src": "assets/img/boys/49-captura-de-tela-2026-04-10-as-14-18-14.jpg",
-     "thumb": "assets/img/boys/49-captura-de-tela-2026-04-10-as-14-18-14-t.jpg",
-     "w": 1600,
-     "h": 1254
-    },
-    {
-     "src": "assets/img/boys/50-captura-de-tela-2026-04-10-as-14-19-26.jpg",
-     "thumb": "assets/img/boys/50-captura-de-tela-2026-04-10-as-14-19-26-t.jpg",
-     "w": 1434,
-     "h": 1600
-    },
-    {
-     "src": "assets/img/boys/51-captura-de-tela-2026-04-10-as-14-19-34.jpg",
-     "thumb": "assets/img/boys/51-captura-de-tela-2026-04-10-as-14-19-34-t.jpg",
-     "w": 1600,
-     "h": 452
-    },
-    {
-     "src": "assets/img/boys/52-captura-de-tela-2026-04-10-as-14-19-56.jpg",
-     "thumb": "assets/img/boys/52-captura-de-tela-2026-04-10-as-14-19-56-t.jpg",
-     "w": 1600,
-     "h": 918
-    },
-    {
-     "src": "assets/img/boys/53-captura-de-tela-2026-04-10-as-14-20-07.jpg",
-     "thumb": "assets/img/boys/53-captura-de-tela-2026-04-10-as-14-20-07-t.jpg",
-     "w": 1600,
-     "h": 540
-    },
-    {
-     "src": "assets/img/boys/54-captura-de-tela-2026-04-10-as-14-20-12.jpg",
-     "thumb": "assets/img/boys/54-captura-de-tela-2026-04-10-as-14-20-12-t.jpg",
-     "w": 1600,
-     "h": 1079
-    },
-    {
-     "src": "assets/img/boys/55-captura-de-tela-2026-04-10-as-14-23-43.jpg",
-     "thumb": "assets/img/boys/55-captura-de-tela-2026-04-10-as-14-23-43-t.jpg",
-     "w": 1600,
-     "h": 783
-    },
-    {
-     "src": "assets/img/boys/56-captura-de-tela-2026-04-10-as-14-23-55.jpg",
-     "thumb": "assets/img/boys/56-captura-de-tela-2026-04-10-as-14-23-55-t.jpg",
-     "w": 1600,
-     "h": 1419
-    },
-    {
-     "src": "assets/img/boys/57-captura-de-tela-2026-04-10-as-14-24-00.jpg",
-     "thumb": "assets/img/boys/57-captura-de-tela-2026-04-10-as-14-24-00-t.jpg",
-     "w": 1600,
-     "h": 1411
-    },
-    {
-     "src": "assets/img/boys/58-captura-de-tela-2026-04-10-as-14-24-03.jpg",
-     "thumb": "assets/img/boys/58-captura-de-tela-2026-04-10-as-14-24-03-t.jpg",
-     "w": 1600,
-     "h": 1233
-    },
-    {
-     "src": "assets/img/boys/59-captura-de-tela-2026-04-10-as-14-25-44.jpg",
-     "thumb": "assets/img/boys/59-captura-de-tela-2026-04-10-as-14-25-44-t.jpg",
-     "w": 1246,
-     "h": 1600
-    },
-    {
-     "src": "assets/img/boys/60-captura-de-tela-2026-04-10-as-14-25-55.jpg",
-     "thumb": "assets/img/boys/60-captura-de-tela-2026-04-10-as-14-25-55-t.jpg",
-     "w": 1101,
-     "h": 1600
-    },
-    {
-     "src": "assets/img/boys/61-captura-de-tela-2026-04-10-as-14-26-11.jpg",
-     "thumb": "assets/img/boys/61-captura-de-tela-2026-04-10-as-14-26-11-t.jpg",
-     "w": 1600,
-     "h": 703
-    },
-    {
-     "src": "assets/img/boys/62-captura-de-tela-2026-04-10-as-14-27-02.jpg",
-     "thumb": "assets/img/boys/62-captura-de-tela-2026-04-10-as-14-27-02-t.jpg",
-     "w": 1600,
-     "h": 996
-    },
-    {
-     "src": "assets/img/boys/63-captura-de-tela-2026-04-10-as-14-27-32.jpg",
-     "thumb": "assets/img/boys/63-captura-de-tela-2026-04-10-as-14-27-32-t.jpg",
-     "w": 1600,
-     "h": 1194
-    },
-    {
-     "src": "assets/img/boys/64-captura-de-tela-2026-04-10-as-14-27-46.jpg",
-     "thumb": "assets/img/boys/64-captura-de-tela-2026-04-10-as-14-27-46-t.jpg",
-     "w": 1407,
-     "h": 1600
-    },
-    {
-     "src": "assets/img/boys/65-captura-de-tela-2026-04-10-as-14-27-51.jpg",
-     "thumb": "assets/img/boys/65-captura-de-tela-2026-04-10-as-14-27-51-t.jpg",
-     "w": 1600,
-     "h": 775
-    },
-    {
-     "src": "assets/img/boys/66-captura-de-tela-2026-04-10-as-14-27-57.jpg",
-     "thumb": "assets/img/boys/66-captura-de-tela-2026-04-10-as-14-27-57-t.jpg",
-     "w": 1600,
-     "h": 876
-    },
-    {
-     "src": "assets/img/boys/67-captura-de-tela-2026-04-10-as-14-28-12.jpg",
-     "thumb": "assets/img/boys/67-captura-de-tela-2026-04-10-as-14-28-12-t.jpg",
-     "w": 1600,
-     "h": 140
-    },
-    {
-     "src": "assets/img/boys/68-captura-de-tela-2026-04-10-as-14-28-48.jpg",
-     "thumb": "assets/img/boys/68-captura-de-tela-2026-04-10-as-14-28-48-t.jpg",
-     "w": 1600,
-     "h": 1080
-    },
-    {
-     "src": "assets/img/boys/69-captura-de-tela-2026-04-10-as-14-30-16.jpg",
-     "thumb": "assets/img/boys/69-captura-de-tela-2026-04-10-as-14-30-16-t.jpg",
+     "src": "assets/img/boys/06-captura-de-tela-2026-04-10-as-14-30-16.jpg",
+     "thumb": "assets/img/boys/06-captura-de-tela-2026-04-10-as-14-30-16-t.jpg",
      "w": 1600,
      "h": 1096
     },
     {
-     "src": "assets/img/boys/70-captura-de-tela-2026-04-10-as-14-31-22.jpg",
-     "thumb": "assets/img/boys/70-captura-de-tela-2026-04-10-as-14-31-22-t.jpg",
-     "w": 1389,
+     "src": "assets/img/boys/07-captura-de-tela-2026-04-10-as-14-14-15.jpg",
+     "thumb": "assets/img/boys/07-captura-de-tela-2026-04-10-as-14-14-15-t.jpg",
+     "w": 1063,
      "h": 1600
     },
     {
-     "src": "assets/img/boys/71-captura-de-tela-2026-04-10-as-14-31-32.jpg",
-     "thumb": "assets/img/boys/71-captura-de-tela-2026-04-10-as-14-31-32-t.jpg",
-     "w": 1600,
-     "h": 975
-    },
-    {
-     "src": "assets/img/boys/72-captura-de-tela-2026-04-10-as-14-31-40.jpg",
-     "thumb": "assets/img/boys/72-captura-de-tela-2026-04-10-as-14-31-40-t.jpg",
-     "w": 1600,
-     "h": 986
-    },
-    {
-     "src": "assets/img/boys/73-captura-de-tela-2026-04-10-as-14-31-53.jpg",
-     "thumb": "assets/img/boys/73-captura-de-tela-2026-04-10-as-14-31-53-t.jpg",
-     "w": 1600,
-     "h": 531
-    },
-    {
-     "src": "assets/img/boys/74-captura-de-tela-2026-04-10-as-14-34-27.jpg",
-     "thumb": "assets/img/boys/74-captura-de-tela-2026-04-10-as-14-34-27-t.jpg",
-     "w": 1600,
-     "h": 1039
-    },
-    {
-     "src": "assets/img/boys/75-captura-de-tela-2026-04-10-as-14-34-28.jpg",
-     "thumb": "assets/img/boys/75-captura-de-tela-2026-04-10-as-14-34-28-t.jpg",
-     "w": 1600,
-     "h": 707
-    },
-    {
-     "src": "assets/img/boys/76-captura-de-tela-2026-04-10-as-14-34-38.jpg",
-     "thumb": "assets/img/boys/76-captura-de-tela-2026-04-10-as-14-34-38-t.jpg",
-     "w": 1600,
-     "h": 927
-    },
-    {
-     "src": "assets/img/boys/77-captura-de-tela-2026-04-10-as-14-35-25.jpg",
-     "thumb": "assets/img/boys/77-captura-de-tela-2026-04-10-as-14-35-25-t.jpg",
-     "w": 1488,
+     "src": "assets/img/boys/08-captura-de-tela-2026-04-10-as-14-15-26.jpg",
+     "thumb": "assets/img/boys/08-captura-de-tela-2026-04-10-as-14-15-26-t.jpg",
+     "w": 976,
      "h": 1600
     },
     {
-     "src": "assets/img/boys/78-captura-de-tela-2026-04-10-as-14-35-42.jpg",
-     "thumb": "assets/img/boys/78-captura-de-tela-2026-04-10-as-14-35-42-t.jpg",
+     "src": "assets/img/boys/09-captura-de-tela-2026-04-10-as-14-20-12.jpg",
+     "thumb": "assets/img/boys/09-captura-de-tela-2026-04-10-as-14-20-12-t.jpg",
      "w": 1600,
-     "h": 1041
+     "h": 1079
     },
     {
-     "src": "assets/img/boys/79-captura-de-tela-2026-04-10-as-14-35-46.jpg",
-     "thumb": "assets/img/boys/79-captura-de-tela-2026-04-10-as-14-35-46-t.jpg",
+     "src": "assets/img/boys/10-captura-de-tela-2026-04-10-as-14-19-56.jpg",
+     "thumb": "assets/img/boys/10-captura-de-tela-2026-04-10-as-14-19-56-t.jpg",
      "w": 1600,
-     "h": 669
+     "h": 918
     },
     {
-     "src": "assets/img/boys/80-captura-de-tela-2026-04-10-as-14-36-17.jpg",
-     "thumb": "assets/img/boys/80-captura-de-tela-2026-04-10-as-14-36-17-t.jpg",
+     "src": "assets/img/boys/11-captura-de-tela-2026-04-10-as-14-17-24.jpg",
+     "thumb": "assets/img/boys/11-captura-de-tela-2026-04-10-as-14-17-24-t.jpg",
      "w": 1600,
-     "h": 1316
+     "h": 619
     },
     {
-     "src": "assets/img/boys/81-captura-de-tela-2026-04-10-as-14-36-48.jpg",
-     "thumb": "assets/img/boys/81-captura-de-tela-2026-04-10-as-14-36-48-t.jpg",
-     "w": 1600,
-     "h": 960
-    },
-    {
-     "src": "assets/img/boys/82-captura-de-tela-2026-04-10-as-14-37-20.jpg",
-     "thumb": "assets/img/boys/82-captura-de-tela-2026-04-10-as-14-37-20-t.jpg",
-     "w": 1600,
-     "h": 1005
-    },
-    {
-     "src": "assets/img/boys/83-captura-de-tela-2026-04-10-as-14-37-34.jpg",
-     "thumb": "assets/img/boys/83-captura-de-tela-2026-04-10-as-14-37-34-t.jpg",
-     "w": 1600,
-     "h": 1017
-    },
-    {
-     "src": "assets/img/boys/84-captura-de-tela-2026-04-10-as-14-37-42.jpg",
-     "thumb": "assets/img/boys/84-captura-de-tela-2026-04-10-as-14-37-42-t.jpg",
-     "w": 1600,
-     "h": 1114
-    },
-    {
-     "src": "assets/img/boys/85-captura-de-tela-2026-04-10-as-14-37-54.jpg",
-     "thumb": "assets/img/boys/85-captura-de-tela-2026-04-10-as-14-37-54-t.jpg",
-     "w": 1600,
-     "h": 605
-    },
-    {
-     "src": "assets/img/boys/86-captura-de-tela-2026-04-10-as-14-38-04.jpg",
-     "thumb": "assets/img/boys/86-captura-de-tela-2026-04-10-as-14-38-04-t.jpg",
-     "w": 1600,
-     "h": 1027
-    },
-    {
-     "src": "assets/img/boys/87-captura-de-tela-2026-04-10-as-14-38-07.jpg",
-     "thumb": "assets/img/boys/87-captura-de-tela-2026-04-10-as-14-38-07-t.jpg",
+     "src": "assets/img/boys/12-captura-de-tela-2026-04-10-as-14-38-07.jpg",
+     "thumb": "assets/img/boys/12-captura-de-tela-2026-04-10-as-14-38-07-t.jpg",
      "w": 1600,
      "h": 1350
     },
     {
-     "src": "assets/img/boys/88-captura-de-tela-2026-04-10-as-14-39-11.jpg",
-     "thumb": "assets/img/boys/88-captura-de-tela-2026-04-10-as-14-39-11-t.jpg",
+     "src": "assets/img/boys/13-captura-de-tela-2026-04-10-as-14-27-51.jpg",
+     "thumb": "assets/img/boys/13-captura-de-tela-2026-04-10-as-14-27-51-t.jpg",
      "w": 1600,
-     "h": 905
+     "h": 775
     },
     {
-     "src": "assets/img/boys/89-captura-de-tela-2026-04-10-as-14-39-42.jpg",
-     "thumb": "assets/img/boys/89-captura-de-tela-2026-04-10-as-14-39-42-t.jpg",
-     "w": 1134,
+     "src": "assets/img/boys/14-captura-de-tela-2026-04-10-as-14-14-59.jpg",
+     "thumb": "assets/img/boys/14-captura-de-tela-2026-04-10-as-14-14-59-t.jpg",
+     "w": 1600,
+     "h": 1003
+    },
+    {
+     "src": "assets/img/boys/15-captura-de-tela-2026-04-10-as-14-15-09.jpg",
+     "thumb": "assets/img/boys/15-captura-de-tela-2026-04-10-as-14-15-09-t.jpg",
+     "w": 1600,
+     "h": 1035
+    },
+    {
+     "src": "assets/img/boys/16-captura-de-tela-2026-04-10-as-14-13-41.jpg",
+     "thumb": "assets/img/boys/16-captura-de-tela-2026-04-10-as-14-13-41-t.jpg",
+     "w": 1316,
      "h": 1600
     },
     {
-     "src": "assets/img/boys/90-captura-de-tela-2026-04-10-as-14-39-50.jpg",
-     "thumb": "assets/img/boys/90-captura-de-tela-2026-04-10-as-14-39-50-t.jpg",
-     "w": 1600,
-     "h": 949
-    },
-    {
-     "src": "assets/img/boys/91-captura-de-tela-2026-04-10-as-14-40-20.jpg",
-     "thumb": "assets/img/boys/91-captura-de-tela-2026-04-10-as-14-40-20-t.jpg",
-     "w": 1600,
+     "src": "assets/img/boys/17-captura-de-tela-2026-04-10-as-14-13-54.jpg",
+     "thumb": "assets/img/boys/17-captura-de-tela-2026-04-10-as-14-13-54-t.jpg",
+     "w": 1437,
      "h": 1600
     },
     {
-     "src": "assets/img/boys/92-captura-de-tela-2026-04-10-as-14-40-27.jpg",
-     "thumb": "assets/img/boys/92-captura-de-tela-2026-04-10-as-14-40-27-t.jpg",
-     "w": 1600,
-     "h": 996
-    },
-    {
-     "src": "assets/img/boys/93-captura-de-tela-2026-04-10-as-14-40-35.jpg",
-     "thumb": "assets/img/boys/93-captura-de-tela-2026-04-10-as-14-40-35-t.jpg",
-     "w": 621,
+     "src": "assets/img/boys/18-captura-de-tela-2026-04-10-as-14-16-02.jpg",
+     "thumb": "assets/img/boys/18-captura-de-tela-2026-04-10-as-14-16-02-t.jpg",
+     "w": 1277,
      "h": 1600
     },
     {
-     "src": "assets/img/boys/94-captura-de-tela-2026-04-10-as-14-42-09.jpg",
-     "thumb": "assets/img/boys/94-captura-de-tela-2026-04-10-as-14-42-09-t.jpg",
+     "src": "assets/img/boys/19-frame-562.jpg",
+     "thumb": "assets/img/boys/19-frame-562-t.jpg",
      "w": 1600,
-     "h": 1081
+     "h": 900
     },
     {
-     "src": "assets/img/boys/95-captura-de-tela-2026-04-10-as-14-42-25.jpg",
-     "thumb": "assets/img/boys/95-captura-de-tela-2026-04-10-as-14-42-25-t.jpg",
+     "src": "assets/img/boys/20-frame-9.jpg",
+     "thumb": "assets/img/boys/20-frame-9-t.jpg",
      "w": 1600,
-     "h": 724
+     "h": 900
     },
     {
-     "src": "assets/img/boys/96-captura-de-tela-2026-04-10-as-14-42-30.jpg",
-     "thumb": "assets/img/boys/96-captura-de-tela-2026-04-10-as-14-42-30-t.jpg",
+     "src": "assets/img/boys/21-captura-de-tela-2026-04-10-as-14-34-38.jpg",
+     "thumb": "assets/img/boys/21-captura-de-tela-2026-04-10-as-14-34-38-t.jpg",
      "w": 1600,
-     "h": 718
+     "h": 927
     },
     {
-     "src": "assets/img/boys/97-captura-de-tela-2026-04-10-as-14-42-32.jpg",
-     "thumb": "assets/img/boys/97-captura-de-tela-2026-04-10-as-14-42-32-t.jpg",
+     "src": "assets/img/boys/22-captura-de-tela-2026-04-10-as-14-31-53.jpg",
+     "thumb": "assets/img/boys/22-captura-de-tela-2026-04-10-as-14-31-53-t.jpg",
      "w": 1600,
-     "h": 694
+     "h": 531
     },
     {
-     "src": "assets/img/boys/98-captura-de-tela-2026-04-10-as-14-43-04.jpg",
-     "thumb": "assets/img/boys/98-captura-de-tela-2026-04-10-as-14-43-04-t.jpg",
+     "src": "assets/img/boys/23-captura-de-tela-2026-04-10-as-14-40-20.jpg",
+     "thumb": "assets/img/boys/23-captura-de-tela-2026-04-10-as-14-40-20-t.jpg",
      "w": 1600,
-     "h": 1019
-    },
-    {
-     "src": "assets/img/boys/99-captura-de-tela-2026-04-10-as-14-43-10.jpg",
-     "thumb": "assets/img/boys/99-captura-de-tela-2026-04-10-as-14-43-10-t.jpg",
-     "w": 1016,
      "h": 1600
-    },
-    {
-     "src": "assets/img/boys/100-captura-de-tela-2026-04-10-as-14-43-38.jpg",
-     "thumb": "assets/img/boys/100-captura-de-tela-2026-04-10-as-14-43-38-t.jpg",
-     "w": 1600,
-     "h": 758
     }
    ]
   },

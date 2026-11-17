@@ -72,6 +72,8 @@ def main():
         if p.get("process"):  # optional: folders whose images fill the 4 "processo" slots
             files = files[:1] + collect(p["process"])[:4] + files[1:]
         files = files[: p.get("maxImages", 14)]
+        if p.get("include"):  # optional: hand-picked files (paths inside acervo/), in this exact order
+            files = [ACERVO / rel for rel in p["include"] if (ACERVO / rel).exists()]
         outdir = OUT / p["slug"]; outdir.mkdir(parents=True, exist_ok=True)
         images = []
         for i, f in enumerate(files):
@@ -103,7 +105,7 @@ def main():
         for old in outdir.iterdir():
             if old.name not in keep: old.unlink()
         print(f"    {len(images)} images")
-        proj = {k: v for k, v in p.items() if k not in ("sources", "maxImages", "cover", "draft")}
+        proj = {k: v for k, v in p.items() if k not in ("sources", "maxImages", "cover", "draft", "include", "process")}
         proj["images"] = images
         if guide: proj["guide"] = guide
         projects.append(proj)

@@ -83,9 +83,34 @@
           "text": "A interface evolui junto com a narrativa. No início, o menu de pausa apresenta um pôster intacto dos Armstrongs. Conforme Lucas consome Temp V e perde a sanidade, o pôster se rasga, ganha rabiscos e as caixas de diálogo se deterioram, refletindo o estado mental do personagem."
         }
       ],
-      "maxImages": 120,
       "galleryTitle": "Assets de desenvolvimento",
-      "galleryIntro": "Wireframes, estudos de interface, componentes e telas do jogo produzidos ao longo do desenvolvimento."
+      "galleryIntro": "Uma seleção do processo: referências, wireframes, componentes de interface e as telas finais dentro do jogo.",
+      "include": [
+        "Projetos/Arvore/Hero/Captura de Tela 2024-11-11 às 11.22.15 1.png",
+        "Projetos/Arvore/Hero/WIREFRAME LOGS.png",
+        "Projetos/Arvore/Hero/Options-1.png",
+        "Projetos/Arvore/Hero/Pause Wireframe - Home Basic-1.png",
+        "Projetos/Arvore/Hero/Pause Wireframe - Home Basic.png",
+        "Projetos/Arvore/Hero/BUTTONS.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.30.16.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.14.15.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.15.26.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.20.12.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.19.56.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.17.24.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.38.07.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.27.51.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.14.59.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.15.09.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.13.41.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.13.54.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.16.02.png",
+        "Projetos/Arvore/Hero/Frame 562.png",
+        "Projetos/Arvore/Hero/Frame 9.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.34.38.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.31.53.png",
+        "Projetos/Arvore/Hero/The Boys/Captura de Tela 2026-04-10 às 14.40.20.png"
+      ]
     },
     {
       "slug": "zoo",
